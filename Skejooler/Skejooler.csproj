@@ -59,7 +59,10 @@
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
     <Content Include="AdminProfile.aspx" />
+    <Content Include="CentreInfo.aspx" />
+    <Content Include="Help.aspx" />
     <Content Include="Index.aspx" />
+    <Content Include="JobPostings.aspx" />
     <Content Include="Map.aspx" />
     <Content Include="Master.Master" />
     <None Include="Web.Debug.config">
@@ -70,6 +73,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="OnlinePrograms.aspx" />
+    <Content Include="RegForm.aspx" />
+    <Content Include="Resources.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -88,12 +94,33 @@
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CentreInfo.aspx.cs">
+      <DependentUpon>CentreInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CentreInfo.aspx.designer.cs">
+      <DependentUpon>CentreInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobPostings.aspx.cs">
+      <DependentUpon>JobPostings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobPostings.aspx.designer.cs">
+      <DependentUpon>JobPostings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Map.aspx.cs">
       <DependentUpon>Map.aspx</DependentUpon>
@@ -102,6 +129,13 @@
     <Compile Include="Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OnlinePrograms.aspx.cs">
+      <DependentUpon>OnlinePrograms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlinePrograms.aspx.designer.cs">
+      <DependentUpon>OnlinePrograms.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
@@ -109,6 +143,20 @@
     </Compile>
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RegForm.aspx.cs">
+      <DependentUpon>RegForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegForm.aspx.designer.cs">
+      <DependentUpon>RegForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.aspx.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources.aspx.designer.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
