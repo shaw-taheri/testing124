@@ -63,6 +63,7 @@
     <Content Include="Help.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="JobPostings.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Map.aspx" />
     <Content Include="Master.Master" />
     <None Include="Web.Debug.config">
@@ -122,6 +123,13 @@
     <Compile Include="JobPostings.aspx.designer.cs">
       <DependentUpon>JobPostings.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Map.aspx.cs">
       <DependentUpon>Map.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -165,6 +173,10 @@
     <Compile Include="UserProfile.aspx.designer.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="script\" />
+    <Folder Include="style\images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
