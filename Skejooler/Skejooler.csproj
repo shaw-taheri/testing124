@@ -76,6 +76,7 @@
     <Content Include="OnlinePrograms.aspx" />
     <Content Include="RegForm.aspx" />
     <Content Include="Resources.aspx" />
+    <Content Include="UserAccountCreation.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -157,6 +158,13 @@
     </Compile>
     <Compile Include="Resources.aspx.designer.cs">
       <DependentUpon>Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccountCreation.aspx.cs">
+      <DependentUpon>UserAccountCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAccountCreation.aspx.designer.cs">
+      <DependentUpon>UserAccountCreation.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
