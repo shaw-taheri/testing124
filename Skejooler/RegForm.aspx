@@ -36,25 +36,34 @@
                     <td>Email Address: </td>
                     <td>
                         <asp:TextBox ID="examineeEmail" runat="server" Width="550px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="examineeEmailReq" runat="server" ControlToValidate="examineeEmail" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="examineeEmailVal" runat="server" ControlToValidate="examineeEmail" EnableClientScript="False" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Exam Date (First Choice) : </td>
                     <td>
                         <asp:TextBox ID="examinee1stDate" runat="server" Width="550px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="examDate1stReq" runat="server" ControlToValidate="examinee1stDate" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Exam Date (Second Choice): </td>
                     <td>
                         <asp:TextBox ID="examinee2ndDate" runat="server" Width="550px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="examDate2ndReq" runat="server" ControlToValidate="examinee2ndDate" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Preferred Appointment Time: </td>
                     <td>
-                        <asp:TextBox ID="appointTime" runat="server" Width="550px"></asp:TextBox>
-                    </td>
+                        <asp:DropDownList ID="prefAppoint" runat="server" CausesValidation="True">
+                            <asp:ListItem Enabled="False" Selected="True">--Select a Time--</asp:ListItem>
+                            <asp:ListItem>Morning</asp:ListItem>
+                            <asp:ListItem>Afternoon</asp:ListItem>
+                        </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="prefAppointListReq" runat="server" ControlToValidate="prefAppoint" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+&nbsp;</td>
                 </tr>
             </table>
             <br />
@@ -68,30 +77,35 @@
                     <td>Name: </td>
                       <td>
                         <asp:TextBox ID="institutionName" runat="server" Width="550px"></asp:TextBox>
+                          <asp:RequiredFieldValidator ID="instNameReq" runat="server" ControlToValidate="institutionName" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Address:</td>
                       <td>
                         <asp:TextBox ID="instAddress" runat="server" Width="550px"></asp:TextBox>
+                          <asp:RequiredFieldValidator ID="instAddressReq" runat="server" ControlToValidate="instAddress" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Name of Contact Person:</td>
                       <td>
                         <asp:TextBox ID="instiContactPerson" runat="server" Width="550px"></asp:TextBox>
+                          <asp:RequiredFieldValidator ID="instiContactPersonReq" runat="server" ControlToValidate="instiContactPerson" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Phone Number of Contact Person: </td>
                       <td>
                         <asp:TextBox ID="instiContactNumber" runat="server" Width="550px"></asp:TextBox>
+                          <asp:RequiredFieldValidator ID="instContactNumberReq" runat="server" ControlToValidate="instiContactNumber" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Email of Contact Person: </td>
                       <td>
                         <asp:TextBox ID="contactEmail" runat="server" Width="550px"></asp:TextBox>
+                          <asp:RequiredFieldValidator ID="instContactEmailReq" runat="server" ControlToValidate="contactEmail" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
             </table>
@@ -106,6 +120,7 @@
                     <td>Course Number: </td>
                     <td>
                         <asp:TextBox ID="courseNumber" runat="server" Width="550px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="courseNumberReq" runat="server" ControlToValidate="courseNumber" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -115,6 +130,7 @@
                             <asp:ListItem>Midterm</asp:ListItem>
                             <asp:ListItem>Final</asp:ListItem>
                         </asp:RadioButtonList>
+                        <asp:RequiredFieldValidator ID="midOrFinalReq" runat="server" ControlToValidate="midOrFinal" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -125,6 +141,7 @@
                             <asp:ListItem>Computer</asp:ListItem>
                             <asp:ListItem>Online</asp:ListItem>
                         </asp:RadioButtonList>
+                        <asp:RequiredFieldValidator ID="examTypeReq" runat="server" ControlToValidate="examType" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -134,18 +151,19 @@
                             <asp:ListItem>Yes</asp:ListItem>
                             <asp:ListItem>No</asp:ListItem>
                         </asp:RadioButtonList>
+                        <asp:RequiredFieldValidator ID="compReqReq" runat="server" ControlToValidate="compReq" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>Additional Requirements or Information: </td>
                     <td>
-                        <asp:TextBox ID="additionalInfo" runat="server" Width="550px"></asp:TextBox>
+                        <asp:TextBox ID="additionalInfo" runat="server" Width="550px" Height="126px" TextMode="MultiLine"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td>Invigilation Fee Covered by Institution: </td>
                     <td>
-                        <asp:TextBox ID="invigFee" runat="server" Width="550px"></asp:TextBox>
+                        <asp:TextBox ID="invigFee" runat="server" Width="158px"></asp:TextBox>
                     </td>
                 </tr>
             </table>

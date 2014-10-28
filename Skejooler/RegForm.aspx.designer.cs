@@ -76,6 +76,24 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.TextBox examineeEmail;
         
         /// <summary>
+        /// examineeEmailReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator examineeEmailReq;
+        
+        /// <summary>
+        /// examineeEmailVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator examineeEmailVal;
+        
+        /// <summary>
         /// examinee1stDate control.
         /// </summary>
         /// <remarks>
@@ -83,6 +101,15 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox examinee1stDate;
+        
+        /// <summary>
+        /// examDate1stReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator examDate1stReq;
         
         /// <summary>
         /// examinee2ndDate control.
@@ -94,13 +121,31 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.TextBox examinee2ndDate;
         
         /// <summary>
-        /// appointTime control.
+        /// examDate2ndReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox appointTime;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator examDate2ndReq;
+        
+        /// <summary>
+        /// prefAppoint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList prefAppoint;
+        
+        /// <summary>
+        /// prefAppointListReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator prefAppointListReq;
         
         /// <summary>
         /// institutionName control.
@@ -112,6 +157,15 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.TextBox institutionName;
         
         /// <summary>
+        /// instNameReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator instNameReq;
+        
+        /// <summary>
         /// instAddress control.
         /// </summary>
         /// <remarks>
@@ -119,6 +173,15 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox instAddress;
+        
+        /// <summary>
+        /// instAddressReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator instAddressReq;
         
         /// <summary>
         /// instiContactPerson control.
@@ -130,6 +193,15 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.TextBox instiContactPerson;
         
         /// <summary>
+        /// instiContactPersonReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator instiContactPersonReq;
+        
+        /// <summary>
         /// instiContactNumber control.
         /// </summary>
         /// <remarks>
@@ -137,6 +209,15 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox instiContactNumber;
+        
+        /// <summary>
+        /// instContactNumberReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator instContactNumberReq;
         
         /// <summary>
         /// contactEmail control.
@@ -148,6 +229,15 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.TextBox contactEmail;
         
         /// <summary>
+        /// instContactEmailReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator instContactEmailReq;
+        
+        /// <summary>
         /// courseNumber control.
         /// </summary>
         /// <remarks>
@@ -155,6 +245,15 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox courseNumber;
+        
+        /// <summary>
+        /// courseNumberReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator courseNumberReq;
         
         /// <summary>
         /// midOrFinal control.
@@ -166,6 +265,15 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RadioButtonList midOrFinal;
         
         /// <summary>
+        /// midOrFinalReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator midOrFinalReq;
+        
+        /// <summary>
         /// examType control.
         /// </summary>
         /// <remarks>
@@ -175,6 +283,15 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RadioButtonList examType;
         
         /// <summary>
+        /// examTypeReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator examTypeReq;
+        
+        /// <summary>
         /// compReq control.
         /// </summary>
         /// <remarks>
@@ -182,6 +299,15 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList compReq;
+        
+        /// <summary>
+        /// compReqReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator compReqReq;
         
         /// <summary>
         /// additionalInfo control.
