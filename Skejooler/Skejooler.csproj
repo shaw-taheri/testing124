@@ -61,6 +61,10 @@
     <Content Include="AdminProfile.aspx" />
     <Content Include="CentreInfo.aspx" />
     <Content Include="Help.aspx" />
+    <Content Include="images\Books.jpg" />
+    <Content Include="images\Desk.jpg" />
+    <Content Include="images\Map.jpg" />
+    <Content Include="images\Stairs.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="JobPostings.aspx" />
     <Content Include="Login.aspx" />
@@ -186,7 +190,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="script\" />
-    <Folder Include="style\images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

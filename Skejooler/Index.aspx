@@ -8,8 +8,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
+    <div id="heroImg">
+        <img src="images/Map.jpg" alt="Map" />
     </div>
     </form>
 </body>
