@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Index.aspx" title="Home"  description="Skejooler Home Page">
+        <siteMapNode url="~/Map.aspx" title="Map Search"  description="Map Search" /> 
+        <siteMapNode url="~/Resources.aspx" title="Resources"  description="Examinee Resources" >
+          <siteMapNode url="~/CentreInfo.aspx" title="Invigilation Centre Information"  description="Invigilation Centre Information" />
+          <siteMapNode url="~/JobPostings.aspx" title="Job Postings"  description="Job Postings" />
+          <siteMapNode url="~/OnlinePrograms.aspx" title="Online Programs"  description="Online Programs" />       
+        </siteMapNode>
+        <siteMapNode url="~/RegForm.aspx" title="Register"  description="Exam Registration Form" />
+        <siteMapNode url="~/AboutUs.aspx" title="About Us"  description="About Us" />
+        <siteMapNode url="~/Help.aspx" title="Help"  description="User Instructions and Help" />
+    </siteMapNode>
+</siteMap>
