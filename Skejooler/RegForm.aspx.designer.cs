@@ -136,16 +136,16 @@ namespace Skejooler {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList prefAppoint;
+        protected global::System.Web.UI.WebControls.RadioButtonList prefAppoint;
         
         /// <summary>
-        /// prefAppointListReq control.
+        /// prefAppointReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator prefAppointListReq;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator prefAppointReq;
         
         /// <summary>
         /// institutionName control.
