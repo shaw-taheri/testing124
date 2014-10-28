@@ -202,6 +202,15 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator instiContactPersonReq;
         
         /// <summary>
+        /// instiContactPersonVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator instiContactPersonVal;
+        
+        /// <summary>
         /// instiContactNumber control.
         /// </summary>
         /// <remarks>
@@ -220,6 +229,15 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator instContactNumberReq;
         
         /// <summary>
+        /// instContactNumberVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator instContactNumberVal;
+        
+        /// <summary>
         /// contactEmail control.
         /// </summary>
         /// <remarks>
@@ -236,6 +254,15 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator instContactEmailReq;
+        
+        /// <summary>
+        /// contactEmailVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator contactEmailVal;
         
         /// <summary>
         /// courseNumber control.

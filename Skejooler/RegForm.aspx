@@ -91,6 +91,7 @@
                       <td>
                         <asp:TextBox ID="instiContactPerson" runat="server" Width="550px"></asp:TextBox>
                           <asp:RequiredFieldValidator ID="instiContactPersonReq" runat="server" ControlToValidate="instiContactPerson" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                          <asp:RegularExpressionValidator ID="instiContactPersonVal" runat="server" ControlToValidate="instiContactPerson" EnableClientScript="False" ForeColor="Red" ValidationExpression="[a-zA-z]+([ '-][a-zA-Z]+)*">*</asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
@@ -98,6 +99,7 @@
                       <td>
                         <asp:TextBox ID="instiContactNumber" runat="server" Width="550px"></asp:TextBox>
                           <asp:RequiredFieldValidator ID="instContactNumberReq" runat="server" ControlToValidate="instiContactNumber" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                          <asp:RegularExpressionValidator ID="instContactNumberVal" runat="server" ControlToValidate="instiContactNumber" EnableClientScript="False" ForeColor="Red" ValidationExpression="^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$">*</asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
@@ -105,6 +107,7 @@
                       <td>
                         <asp:TextBox ID="contactEmail" runat="server" Width="550px"></asp:TextBox>
                           <asp:RequiredFieldValidator ID="instContactEmailReq" runat="server" ControlToValidate="contactEmail" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                          <asp:RegularExpressionValidator ID="contactEmailVal" runat="server" ControlToValidate="contactEmail" EnableClientScript="False" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
                     </td>
                 </tr>
             </table>
