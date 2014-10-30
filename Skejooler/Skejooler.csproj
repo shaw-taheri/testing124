@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddInvigilationCenterForm.aspx" />
     <Content Include="AdminProfile.aspx" />
     <Content Include="Articles.aspx" />
     <Content Include="CentreInfo.aspx" />
@@ -90,6 +91,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddInvigilationCenterForm.aspx.cs">
+      <DependentUpon>AddInvigilationCenterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddInvigilationCenterForm.aspx.designer.cs">
+      <DependentUpon>AddInvigilationCenterForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminProfile.aspx.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
