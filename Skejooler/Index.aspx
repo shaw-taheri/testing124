@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div id="heroImg">
-        <img src="images/Map.jpg" alt="Map" />
+        <img id="map" src="images/Map.jpg" alt="Map" />
     </div>
     </form>
 </body>

@@ -5,15 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Skejooler</title>
+    <link href="style/style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
-        <link href="style/style.css" rel="stylesheet" />
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        <p>Content</p>
         </asp:ContentPlaceHolder>
     </div>
     </form>
