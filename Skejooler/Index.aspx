@@ -9,14 +9,18 @@
 <body>
     <form id="form1" runat="server">
     <div id="heroImg">
+        <div id="skejoolerLogoDiv"><p id="skejoolerLogo">Skejooler</p></div>
         <h1>Book Your Exam </h1>
         <br />
-            <h2>Click the Button to Get Started: </h2>
-            <asp:Button ID="BookYourExamButton" runat="server" Text="Book Your Exam" />
-       
+            <h2 id="getStartedText">Click the Button to Get Started: </h2><br />
+            
+            <div id="bookBtnDiv"><a href="Map.aspx" id="bookBtn" >Book Your Exam</a></div><br /><br />
+
     </div>
         <div>
-            <h2> What is Skejooler?</h2>
+            <h2> What is Skejooler?
+            </h2>
+
             <table id="homeCenterTable">
                 <tr>
                     <td>
@@ -36,7 +40,7 @@
 
             &nbsp;&nbsp;&nbsp;
             <br />
-            <table style="width:75%;">
+            <table id="homeTable">
                 <tr>
                     <td>
 
