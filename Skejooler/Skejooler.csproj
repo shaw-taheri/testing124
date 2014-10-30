@@ -57,8 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AboutUs.aspx" />
     <Content Include="AdminProfile.aspx" />
+    <Content Include="Articles.aspx" />
     <Content Include="CentreInfo.aspx" />
     <Content Include="Help.aspx" />
     <Content Include="images\Books.jpg" />
@@ -77,6 +77,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="style\homeStyle.css" />
+    <Content Include="style\masterStyle.css" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
@@ -89,19 +90,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutUs.aspx.cs">
-      <DependentUpon>AboutUs.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AboutUs.aspx.designer.cs">
-      <DependentUpon>AboutUs.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AdminProfile.aspx.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles.aspx.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles.aspx.designer.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
     </Compile>
     <Compile Include="CentreInfo.aspx.cs">
       <DependentUpon>CentreInfo.aspx</DependentUpon>

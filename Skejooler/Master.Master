@@ -12,8 +12,29 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <div id="header">
+            <div id="globalNav">
+                <ul>
+                    <li><a href="Index.aspx">Home</a></li>
+                    <li><a href="Map.aspx">Map</a></li>
+                    <li><a href="RegForm.aspx">Registration Form</a></li>
+                    <li><a href="Resources.aspx">Resources</a>
+                        <ul><!-- Resources Drop Menu-->
+                            <li><a href="CentreInfo.aspx"></a>Invigilation Centre Info</li>
+                            <li><a href="OnlinePrograms.aspx"></a>Online Programs</li>
+                            <li><a href="JobPostings.aspx">Job Postings</a></li>
+                            <li><a href="Articles.aspx">Articles</a></li>
+                        </ul><!-- End Resources Drop Menu-->
+                    </li>
+                    <li><a href="Help.aspx">Help</a></li>
+                </ul>
+            </div><!--End globalNav-->
+        </div><!--End header-->
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
+        <div id="footer">
+
+        </div>
     </div>
     </form>
 </body>
