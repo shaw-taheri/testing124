@@ -1,2 +1,18 @@
 ﻿body {
 }
+
+#header{
+    margin: 0 auto;
+    width: 100%
+}
+#globalNav{
+    background-color: #1DA696;
+
+}
+
+ul.globalNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}

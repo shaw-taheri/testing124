@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Skejooler</title>
-    <link href="style/style.css" rel="stylesheet" />
+    <link href="style/masterStyle.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -13,13 +13,17 @@
     <form id="form1" runat="server">
     <div>
         <div id="header">
-            <div id="globalNav">
-                <ul>
+            
+            <asp:Menu ID="globalNav" Orientation="Horizontal" runat="server" DataSourceID="SiteMapDataSource1">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <%--<div id="globalNav">
+                <ul class="globalNav">
                     <li><a href="Index.aspx">Home</a></li>
                     <li><a href="Map.aspx">Map</a></li>
                     <li><a href="RegForm.aspx">Registration Form</a></li>
                     <li><a href="Resources.aspx">Resources</a>
-                        <ul><!-- Resources Drop Menu-->
+                        <ul class="globalNav"><!-- Resources Drop Menu-->
                             <li><a href="CentreInfo.aspx"></a>Invigilation Centre Info</li>
                             <li><a href="OnlinePrograms.aspx"></a>Online Programs</li>
                             <li><a href="JobPostings.aspx">Job Postings</a></li>
@@ -28,13 +32,13 @@
                     </li>
                     <li><a href="Help.aspx">Help</a></li>
                 </ul>
-            </div><!--End globalNav-->
+            </div><!--End globalNav-->--%>
         </div><!--End header-->
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
         <div id="footer">
 
-        </div>
+        </div><!--End footer-->
     </div>
     </form>
 </body>
