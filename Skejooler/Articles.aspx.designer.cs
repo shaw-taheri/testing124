@@ -11,7 +11,7 @@ namespace Skejooler
 {
 
 
-    public partial class AboutUs
+    public partial class Articles
     {
     }
 }
