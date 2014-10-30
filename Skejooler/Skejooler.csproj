@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
+    <Content Include="AddInvigilationCenterForm.aspx" />
     <Content Include="AdminProfile.aspx" />
     <Content Include="CentreInfo.aspx" />
     <Content Include="Help.aspx" />
@@ -90,6 +91,13 @@
     </Compile>
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddInvigilationCenterForm.aspx.cs">
+      <DependentUpon>AddInvigilationCenterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddInvigilationCenterForm.aspx.designer.cs">
+      <DependentUpon>AddInvigilationCenterForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminProfile.aspx.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
