@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index3.aspx.cs" Inherits="Skejooler.Index2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Skejooler.Index" %>
 
 <!DOCTYPE html>
 
@@ -17,7 +17,7 @@
         <div class="row top-home">
             <div class="row top-bar">
                 <div class="col-md-6">
-                    <img src="http://placehold.it/200x80">
+                    <img src="http://placehold.it/200x80"/>
                 </div>
                 <div class="col-md-6">
                     <nav class="navbar navbar-default home-nav" role="navigation">
