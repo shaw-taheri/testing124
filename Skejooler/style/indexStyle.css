@@ -1,0 +1,59 @@
+﻿body {
+}
+
+.top-home{
+    background-color:#EEE;
+    height: 600px;
+    padding: 20px 20px;
+}
+
+.home-nav{
+    float: right;
+    width: 500px;
+}
+
+.btn-signup{
+   background-color:#333;
+   border-radius:5px;
+   color:#fff;
+   padding:5px 10px;
+   margin-left:10px;
+   font-weight:bold;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: 0px;
+}
+
+.navbar-nav{
+    float: right;
+}
+
+.top-home h1{
+    text-align:center;
+    padding-top: 200px;
+
+}
+
+.top-home p{
+    text-align:center;
+    margin-top:20px;
+}
+
+.blueBtn{
+    background-color:#1DA696;
+    color:#FFF;
+    padding:20px 40px;
+    text-decoration:none;
+
+}
+
+.blueBtn:hover{
+    text-decoration:none;
+}
+
+.mid-row h2{
+    text-align:center;
+    margin-bottom:30px;
+}
