@@ -10,7 +10,7 @@
 namespace Skejooler {
     
     
-    public partial class Index2 {
+    public partial class Index {
         
         /// <summary>
         /// form1 control.
