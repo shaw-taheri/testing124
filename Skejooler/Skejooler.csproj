@@ -77,7 +77,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="style\homeStyle.css" />
     <Content Include="style\indexStyle.css" />
     <Content Include="style\masterStyle.css" />
     <Content Include="Web.sitemap" />

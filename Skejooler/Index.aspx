@@ -69,7 +69,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="http://placehold.it/500x300"/>
+                    <img id="desk" src="images/Desk.jpg" alt="Desk"/>
                 </div>
                 <div class="col-md-6">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo eget ex ultrices vulputate. Ut euismod tempus arcu, quis fermentum neque imperdiet sit amet.</p>
