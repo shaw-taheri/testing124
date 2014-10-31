@@ -67,7 +67,6 @@
     <Content Include="images\Map.jpg" />
     <Content Include="images\Stairs.jpg" />
     <Content Include="Index.aspx" />
-    <Content Include="Index2.aspx" />
     <Content Include="JobPostings.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Map.aspx" />
@@ -134,13 +133,6 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Index2.aspx.cs">
-      <DependentUpon>Index2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Index2.aspx.designer.cs">
-      <DependentUpon>Index2.aspx</DependentUpon>
     </Compile>
     <Compile Include="JobPostings.aspx.cs">
       <DependentUpon>JobPostings.aspx</DependentUpon>
