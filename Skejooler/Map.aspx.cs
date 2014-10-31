@@ -13,5 +13,10 @@ namespace Skejooler
         {
 
         }
+
+        protected void InvigCentres1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }
