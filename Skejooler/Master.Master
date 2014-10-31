@@ -14,9 +14,9 @@
     <div>
         <div id="header">
             
-            <asp:Menu ID="globalNav" Orientation="Horizontal" runat="server" DataSourceID="SiteMapDataSource1">
+<%--            <asp:Menu ID="globalNav" Orientation="Horizontal" runat="server" DataSourceID="SiteMapDataSource1">
             </asp:Menu>
-            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />--%>
             <%--<div id="globalNav">
                 <ul class="globalNav">
                     <li><a href="Index.aspx">Home</a></li>
