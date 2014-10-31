@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index2.aspx.cs" Inherits="Skejooler.Index2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index3.aspx.cs" Inherits="Skejooler.Index2" %>
 
 <!DOCTYPE html>
 
