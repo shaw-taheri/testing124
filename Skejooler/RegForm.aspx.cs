@@ -20,22 +20,22 @@ namespace Skejooler
 
         protected void regFormSubmit_Click(object sender, EventArgs e)
         {
-            SqlConnection RegDataSource = new SqlConnection("Server=localhost;Port=3306;Database=skejooler;Uid=root;Pwd=Ieng1hem;");
+            SqlConnection RegDataSource = new SqlConnection("Server=localhost;Port=3306;Database=skejooler;Uid=root;Pwd=root;");
+
+            SqlCommand xp = new SqlCommand("Insert into registration_form(fName, lName)Values(@fName, @lName)", RegDataSource);
+            xp.Parameters.AddWithValue("@", examineeFName.Text);
+            xp.Parameters.AddWithValue("@", examineeLName.Text);
+
+            RegDataSource.Open();
+            xp.ExecuteNonQuery();
+            RegDataSource.Close();
+
+            if (IsPostBack)
             {
-                SqlCommand xp = new SqlCommand("Insert into registration_form(fName, lName)Values(@fName, @lName)", RegDataSource);
-                xp.Parameters.AddWithValue("@", examineeFName.Text);
-                xp.Parameters.AddWithValue("@", examineeLName.Text);
-
-                RegDataSource.Open();
-                xp.ExecuteNonQuery();
-                RegDataSource.Close();
-
-                if (IsPostBack)
-                {
-                    examineeFName.Text = "";
-                    examineeLName.Text = "";
-                }
+                examineeFName.Text = "";
+                examineeLName.Text = "";
             }
         }
     }
 }
+
