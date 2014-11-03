@@ -35,7 +35,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                           <ul class="nav navbar-nav">
                             <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="caret"></span></a>
                               <ul class="dropdown-menu" role="menu">
                                 <li><a href="CentreInfo.aspx">Invigilation Centre Info</a></li>
                                 <li><a href="JobPostings.aspx">Job Postings</a></li>
@@ -43,7 +43,7 @@
                                 <li><a href="Articles.aspx">Articles</a></li>
                               </ul>
                             </li>
-                            <li><a href="Help.aspx">Help</a></li>
+                            <li><a href="Help.aspx">HELP</a></li>
                             <li><a class="btn-signup"href="#">SIGN-UP</a></li>
                             <li><a class="btn-signup"href="Login.aspx">LOGIN</a></li>
                           </ul>
@@ -55,8 +55,8 @@
             <div class="container">
                 <div class="row">
                 <div class="col-md-12">
-                    <h1>CALL TO ACTION</h1>
-                    <p><a class="blueBtn" href="Map.aspx">BOOK YOUR EXAM</a></p>
+                    <h1>BOOK YOUR EXAM NOW</h1>
+                    <p><a class="find-btn" href="Map.aspx">FIND A CENTRE</a></p>
                 </div>
                 </div>
             </div>
@@ -77,30 +77,30 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 whyuse-row">
                     <h2>why use Skejooler?</h2>
                 </div>
             </div>
             <div class="row"><!--features-->
                 <div class="col-md-2 col-md-offset-1">
-                    <img src="http://placehold.it/150x150"/>
-                    <h3>feature</h3>
+                    <img src="http://placehold.it/165x150"/>
+                    <h3>easy-to-use search</h3>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/150x150"/>
-                    <h3>feature</h3>
+                    <img src="http://placehold.it/165x150"/>
+                    <h3>schedule</h3>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/150x150"/>
-                    <h3>feature</h3>
+                    <img src="http://placehold.it/165x150"/>
+                    <h3>invigilation centres</h3>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/150x150"/>
-                    <h3>feature</h3>
+                    <img src="http://placehold.it/165x150"/>
+                    <h3>job postings</h3>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/150x150"/>
-                    <h3>feature</h3>
+                    <img src="http://placehold.it/165x150"/>
+                    <h3>online programs</h3>
                 </div>
             </div>
         </div>
