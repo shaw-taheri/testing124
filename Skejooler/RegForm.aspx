@@ -8,13 +8,18 @@
             <div id="examineeInfo">
                 <table style="width:75%; margin-bottom: 0px;">
                     <tr>
-                        <td>First / Last Name:&nbsp;
+                        <td>First Name:
                         </td>
                         <td>
-                            <asp:TextBox ID="examineeName" runat="server" Width="550px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="nameRequired" runat="server" ControlToValidate="examineeName" 
+                            <asp:TextBox ID="examineeFName" runat="server" Width="550px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="nameRequired" runat="server" ControlToValidate="examineeFName" 
                                 ForeColor="Red" EnableClientScript="False">*</asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="regExpExamineeName" runat="server" ControlToValidate="examineeName" EnableClientScript="False" ForeColor="Red" ValidationExpression="[a-zA-z]+([ '-][a-zA-Z]+)*">*</asp:RegularExpressionValidator>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last Name: </td>
+                        <td>
+                            <asp:TextBox ID="examineeLName" runat="server" Width="550px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -34,14 +39,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Exam Date (First Choice) : </td>
+                        <td>&nbsp;Exam Date (First Choice) : </td>
                         <td>
                             <asp:TextBox ID="examinee1stDate" runat="server" Width="550px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="examDate1stReq" runat="server" ControlToValidate="examinee1stDate" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
-                        <td>Exam Date (Second Choice): </td>
+                        <td>Exam Date (Second Choice):</td>
                         <td>
                             <asp:TextBox ID="examinee2ndDate" runat="server" Width="550px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="examDate2ndReq" runat="server" ControlToValidate="examinee2ndDate" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
@@ -163,6 +168,14 @@
                     </tr>
                 </table>
                 <asp:ValidationSummary ID="regFormValidationSum" runat="server" DisplayMode="List" ForeColor="Red" HeaderText="There was an error in submitting the form. Please ensure all information is included and in the right format." />
+                <asp:Label ID="RegLabel" runat="server" ForeColor="Red"></asp:Label>
+                <br />
+                <br />
+                <br />
+                <br />
+                <asp:SqlDataSource ID="RegDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:skejoolerConnectionString.ProviderName %>" SelectCommand="SELECT fName, lName FROM registration_form;"></asp:SqlDataSource>
+                <br />
+                <br />
                 <br />
                 <asp:Button ID="regFormSubmit" runat="server" Text="Submit" />
                 <br />
