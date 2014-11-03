@@ -13,13 +13,13 @@ namespace Skejooler {
     public partial class RegForm {
         
         /// <summary>
-        /// examineeName control.
+        /// examineeFName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox examineeName;
+        protected global::System.Web.UI.WebControls.TextBox examineeFName;
         
         /// <summary>
         /// nameRequired control.
@@ -31,13 +31,13 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator nameRequired;
         
         /// <summary>
-        /// regExpExamineeName control.
+        /// examineeLName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator regExpExamineeName;
+        protected global::System.Web.UI.WebControls.TextBox examineeLName;
         
         /// <summary>
         /// examineeNumber control.
@@ -362,6 +362,24 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary regFormValidationSum;
+        
+        /// <summary>
+        /// RegLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RegLabel;
+        
+        /// <summary>
+        /// RegDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource RegDataSource;
         
         /// <summary>
         /// regFormSubmit control.
