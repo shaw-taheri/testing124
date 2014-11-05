@@ -13,7 +13,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="container-fluid">
+    <div class="container-fluid index-container">
         <div class="row top-home">
             <div class="row top-bar">
                 <div class="col-md-6">
@@ -81,28 +81,38 @@
                     <h2>why use Skejooler?</h2>
                 </div>
             </div>
-            <div class="row"><!--features-->
+            <div class="row features-row"><!--features-->
                 <div class="col-md-2 col-md-offset-1">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>easy-to-use search</h3>
+                    <a href="Map.aspx">
+                        <img src="http://placehold.it/165x150"/>
+                        <h3>easy-to-use search</h3>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>schedule</h3>
+                    <a href="#">
+                        <img src="http://placehold.it/165x150"/>
+                        <h3>schedule</h3>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>invigilation centres</h3>
+                    <a href="CentreInfo.aspx">
+                        <img src="http://placehold.it/165x150"/>
+                        <h3>invigilation centres</h3>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>job postings</h3>
+                    <a href="JobPostings.aspx">
+                        <img src="http://placehold.it/165x150"/>
+                        <h3>job postings</h3>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>online programs</h3>
+                    <a href="OnlinePrograms.aspx">
+                        <img src="http://placehold.it/165x150"/>
+                        <h3>online programs</h3>
+                    </a>
                 </div>
-            </div>
+            </div><!--features-->
         </div>
         <div class="footer">
             <div class="container">
