@@ -364,15 +364,6 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.ValidationSummary regFormValidationSum;
         
         /// <summary>
-        /// RegLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label RegLabel;
-        
-        /// <summary>
         /// RegDataSource control.
         /// </summary>
         /// <remarks>
@@ -389,5 +380,14 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button regFormSubmit;
+        
+        /// <summary>
+        /// RegLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RegLabel;
     }
 }
