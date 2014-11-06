@@ -56,6 +56,7 @@
                 </div>
             </div>
         </div><!--End top-home-->
+        </div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
         <div class="footer">

@@ -22,7 +22,7 @@ namespace Skejooler
  
      var mapOptions = {
      center: new google.maps.LatLng(49.248657,-123.001364),
-     zoom: 2,
+     zoom: ,
      mapTypeId: google.maps.MapTypeId.ROADMAP
      };
  
