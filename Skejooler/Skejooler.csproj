@@ -105,6 +105,7 @@
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\Reg_form.cs" />
     <Compile Include="Articles.aspx.cs">
       <DependentUpon>Articles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
