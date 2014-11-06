@@ -10,14 +10,16 @@
     <title>Skejooler Home</title>
     <link href="style/bootstrap.min.css" rel="stylesheet"/>
     <link href="style/indexStyle.css" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,700,600,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="container-fluid">
+    <div class="container-fluid index-container">
         <div class="row top-home">
             <div class="row top-bar">
                 <div class="col-md-6">
-                    <img src="http://placehold.it/200x80"/>
+                    <img src="images/logo.png" alt="Skejooler Logo"/>
                 </div>
                 <div class="col-md-6">
                     <nav class="navbar navbar-default home-nav" role="navigation">
@@ -55,8 +57,8 @@
             <div class="container">
                 <div class="row">
                 <div class="col-md-12">
-                    <h1>BOOK YOUR EXAM NOW</h1>
-                    <p><a class="find-btn" href="Map.aspx">FIND A CENTRE</a></p>
+                    <h1>BOOK YOUR EXAM</h1>
+                    <p><a class="find-btn" href="Map.aspx">GET STARTED</a></p>
                 </div>
                 </div>
             </div>
@@ -74,42 +76,52 @@
                 <div class="col-md-6">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo eget ex ultrices vulputate. Ut euismod tempus arcu, quis fermentum neque imperdiet sit amet.</p>
                     <p>Vestibulum pulvinar, urna luctus finibus egestas, massa arcu dictum ipsum, quis elementum justo diam a augue. Vivamus ultricies nunc ac magna dignissim, in finibus ante rhoncus. convallis.</p>
-                </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet justo eget ex ultrices vulputate.</p>
+                   </div>
             </div>
             <div class="row">
                 <div class="col-md-12 whyuse-row">
                     <h2>why use Skejooler?</h2>
                 </div>
             </div>
-            <div class="row"><!--features-->
+            <div class="row features-row"><!--features-->
                 <div class="col-md-2 col-md-offset-1">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>easy-to-use search</h3>
+                    <a href="Map.aspx">
+                        <img src="images/search.jpg" alt="Search Icon"/>
+                        <h3>easy-to-use search</h3>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>schedule</h3>
+                    <a href="#">
+                        <img src="images/schedule.jpg" alt="Schedule Icon"/>
+                        <h3>schedule</h3>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>invigilation centres</h3>
+                    <a href="CentreInfo.aspx">
+                        <img src="images/centers.jpg" alt="Centre Icon"/>
+                        <h3>invigilation centres</h3>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>job postings</h3>
+                    <a href="JobPostings.aspx">
+                        <img src="images/jobs.jpg" alt="Jobs Icon"/>
+                        <h3>job postings</h3>
+                    </a>
                 </div>
                 <div class="col-md-2">
-                    <img src="http://placehold.it/165x150"/>
-                    <h3>online programs</h3>
+                    <a href="OnlinePrograms.aspx">
+                        <img src="images/programs.jpg" alt="Programs Icon"/>
+                        <h3>online programs</h3>
+                    </a>
                 </div>
-            </div>
+            </div><!--features-->
         </div>
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <h4>SKEJOOLER</h4>
-                        <hr />
+                    <div class="col-md-4 footer-skejooler">
+                        <h4 >SKEJOOLER</h4>
                         <ul>
                             <li><a href="Index.aspx">HOME</a></li>
                             <li><a href="Map.aspx">MAP</a></li>
@@ -117,9 +129,8 @@
                             <li><a href="RegForm.aspx">REGISTRATION FORM</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 footer-centers">
                         <h4>EXAMINEE RESOURCES</h4>
-                        <hr />
                         <ul>
                             <li><a href="CentreInfo.aspx">INVIGILATION CENTRE INFO</a></li>
                             <li><a href="OnlinePrograms.aspx">ONLINE PROGRAMS</a></li>
@@ -127,17 +138,15 @@
                             <li><a href="JobPostings.aspx">JOB POSTINGS</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 follow">
+                    <div class="col-md-3 footer-social">
                         <h4>FOLLOW US</h4>
-                        <hr />
-                        <img src="http://placehold.it/50x50"/>
-                        <img src="http://placehold.it/50x50"/>
+                            <img class="social" src="images/facebook.jpg" alt="Facebook Icon"/>
+                            <img class="social" src="images/google_plus.jpg" alt="Google Plus Icon"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <hr />
-                        <p>Copyright blah blah blah</p>
+                        <p class="copy">&copy;2014 Skejooler Industries</p>
                     </div>
                 </div>
             </div>

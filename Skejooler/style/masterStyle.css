@@ -3,7 +3,7 @@
 
 .top-home{
     background-color:#EEE;
-    height: 600px;
+    height: 200px;
     padding: 20px 20px;
 }
 
@@ -66,4 +66,13 @@
 .footer ul{
     list-style-type: none;
     padding-left: 0;
+}
+
+.under-construction{
+    text-align:center;
+}
+
+.under-construction p{
+    font-style:italic;
+    margin-top:20px;
 }

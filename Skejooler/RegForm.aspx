@@ -168,16 +168,15 @@
                     </tr>
                 </table>
                 <asp:ValidationSummary ID="regFormValidationSum" runat="server" DisplayMode="List" ForeColor="Red" HeaderText="There was an error in submitting the form. Please ensure all information is included and in the right format." />
-                <asp:Label ID="RegLabel" runat="server" ForeColor="Red"></asp:Label>
                 <br />
-                <br />
-                <br />
-                <br />
-                <asp:SqlDataSource ID="RegDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:skejoolerConnectionString.ProviderName %>" SelectCommand="SELECT fName, lName FROM registration_form;"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="RegDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnect %>" ProviderName="<%$ ConnectionStrings:skejoolerConnect.ProviderName %>" SelectCommand="SELECT * FROM registration_form;" InsertCommand="INSERT * INTO registration_form;"></asp:SqlDataSource>
                 <br />
                 <br />
                 <br />
                 <asp:Button ID="regFormSubmit" runat="server" Text="Submit" />
+                <br />
+                <br />
+                <asp:Label ID="RegLabel" runat="server" ForeColor="Red"></asp:Label>
                 <br />
 
             </div>

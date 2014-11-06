@@ -65,8 +65,16 @@
     <Content Include="Form1.aspx" />
     <Content Include="Help.aspx" />
     <Content Include="images\Books.jpg" />
+    <Content Include="images\centers.jpg" />
     <Content Include="images\Desk.jpg" />
+    <Content Include="images\facebook.jpg" />
+    <Content Include="images\google_plus.jpg" />
+    <Content Include="images\jobs.jpg" />
+    <Content Include="images\logo.png" />
     <Content Include="images\Map.jpg" />
+    <Content Include="images\programs.jpg" />
+    <Content Include="images\schedule.jpg" />
+    <Content Include="images\search.jpg" />
     <Content Include="images\Stairs.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="JobPostings.aspx" />
