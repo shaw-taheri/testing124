@@ -13,21 +13,12 @@ namespace Skejooler {
     public partial class Map {
         
         /// <summary>
-        /// DetailsView1 control.
+        /// Literal1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
-        
-        /// <summary>
-        /// InvigCentres1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource InvigCentres1;
+        protected global::System.Web.UI.WebControls.Literal Literal1;
     }
 }

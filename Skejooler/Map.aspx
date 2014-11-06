@@ -38,7 +38,7 @@
                   <asp:BoundField DataField="cost" HeaderText="cost" SortExpression="cost" />
               </Fields>
           </asp:DetailsView>
-          <asp:SqlDataSource ID="InvigCentres1" runat="server" ConnectionString="<%$ ConnectionStrings:invigSkejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:invigSkejoolerConnectionString.ProviderName %>" SelectCommand="Select name, street_name, city, province, postal_code, phone_num, day, evenings, weekends, online, cost FROM invigilation_centre"></asp:SqlDataSource>
+          <asp:SqlDataSource ID="InvigCentres1" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnectionString2 %>" ProviderName="<%$ ConnectionStrings:skejoolerConnectionString2.ProviderName %>" SelectCommand="Select name, street_name, city, province, postal_code, phone_num, day, evenings, weekends, online, cost FROM invigilation_centre"></asp:SqlDataSource>
        </div> 
    </div>
 </asp:Content>
