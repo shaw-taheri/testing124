@@ -96,8 +96,17 @@
     margin-top: 20px;
 }
 
-.features-row{
-    text-decoration: none
+.features-row a{
+    text-decoration: none;
+}
+
+.features-row a:hover{
+    text-decoration:none;
+}
+
+.features-row a:active{
+    text-decoration:none;
+    color:#fff;
 }
 
 /*Footer*/
@@ -127,4 +136,8 @@
 .footer a:active{
     color: #F29728 ;
     text-decoration: none;
+}
+
+.follow{
+    margin-right:10px;
 }

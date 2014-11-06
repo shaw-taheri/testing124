@@ -67,3 +67,12 @@
     list-style-type: none;
     padding-left: 0;
 }
+
+.under-construction{
+    text-align:center;
+}
+
+.under-construction p{
+    font-style:italic;
+    margin-top:20px;
+}

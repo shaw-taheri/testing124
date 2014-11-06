@@ -137,11 +137,11 @@
                             <li><a href="JobPostings.aspx">JOB POSTINGS</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 follow">
+                    <div class="col-md-3">
                         <h4>FOLLOW US</h4>
                         <hr />
-                        <img src="http://placehold.it/50x50"/>
-                        <img src="http://placehold.it/50x50"/>
+                            <img class="follow" src="http://placehold.it/50x50"/>
+                            <img class="follow" src="http://placehold.it/50x50"/>
                     </div>
                 </div>
                 <div class="row">
