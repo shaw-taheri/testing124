@@ -26,6 +26,11 @@
     width: 500px;
 }
 
+.nav a{
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+}
+
 .navbar-default .navbar-nav>li>a.btn-signup{
    background-color:#fff;
    border-radius:5px;
@@ -89,11 +94,13 @@
     text-decoration:none;
     font-size: 2em;
     border-radius:10px;
-
+    font-family: 'Patua One', cursive;
+    font-style:italic;
 }
 
 .find-btn:hover{
     text-decoration:none;
+    color:#fff;
 }
 
 .mid-row h2 {
@@ -125,6 +132,8 @@
 }
 .features-row a{
     text-decoration: none;
+    font-family: 'Patua One', cursive;
+
 }
 
 .features-row img{

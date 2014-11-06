@@ -58,7 +58,7 @@
                 <div class="row">
                 <div class="col-md-12">
                     <h1>BOOK YOUR EXAM</h1>
-                    <p><a class="find-btn" href="Map.aspx">FIND A CENTRE</a></p>
+                    <p><a class="find-btn" href="Map.aspx">GET STARTED</a></p>
                 </div>
                 </div>
             </div>
