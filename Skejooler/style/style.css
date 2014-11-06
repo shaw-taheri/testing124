@@ -10,9 +10,8 @@
 #map-results
         {
         float: left;
-        }
+    width: 424px;
+}
 
-div {
-
-    
+div {    height: 501px;
 }
