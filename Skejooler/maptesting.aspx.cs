@@ -7,9 +7,11 @@ using System.Web.UI.WebControls;
 using System.Configuration;
 using MySql.Data.MySqlClient;
 
+
+
 namespace Skejooler
 {
-    public partial class Map : System.Web.UI.Page
+    public partial class maptesting : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,7 +22,7 @@ namespace Skejooler
  
      var mapOptions = {
      center: new google.maps.LatLng(49.248657,-123.001364),
-     zoom: 2,
+     zoom:,
      mapTypeId: google.maps.MapTypeId.ROADMAP
      };
  
@@ -54,7 +56,5 @@ namespace Skejooler
             }
             return markers;
         }
-
-        
     }
 }

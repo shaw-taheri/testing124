@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -61,6 +62,7 @@
     <Content Include="AdminProfile.aspx" />
     <Content Include="Articles.aspx" />
     <Content Include="CentreInfo.aspx" />
+    <Content Include="Form1.aspx" />
     <Content Include="Help.aspx" />
     <Content Include="images\Books.jpg" />
     <Content Include="images\centers.jpg" />
@@ -78,7 +80,9 @@
     <Content Include="JobPostings.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Map.aspx" />
+    <Content Include="maptesting.aspx" />
     <Content Include="Master.Master" />
+    <Content Include="app.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -113,6 +117,7 @@
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\Reg_form.cs" />
     <Compile Include="Articles.aspx.cs">
       <DependentUpon>Articles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -126,6 +131,13 @@
     </Compile>
     <Compile Include="CentreInfo.aspx.designer.cs">
       <DependentUpon>CentreInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.aspx.cs">
+      <DependentUpon>Form1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form1.aspx.designer.cs">
+      <DependentUpon>Form1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Help.aspx.cs">
       <DependentUpon>Help.aspx</DependentUpon>
@@ -161,6 +173,13 @@
     </Compile>
     <Compile Include="Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maptesting.aspx.cs">
+      <DependentUpon>maptesting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maptesting.aspx.designer.cs">
+      <DependentUpon>maptesting.aspx</DependentUpon>
     </Compile>
     <Compile Include="OnlinePrograms.aspx.cs">
       <DependentUpon>OnlinePrograms.aspx</DependentUpon>
