@@ -7,63 +7,63 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Skejooler Home</title>
+    <title>Skejooler</title>
     <link href="style/bootstrap.min.css" rel="stylesheet"/>
     <link href="style/indexStyle.css" rel="stylesheet"/>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,700,600,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,700,600,400' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'/>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="container-fluid index-container">
-        <div class="row top-home">
-            <div class="row top-bar">
-                <div class="col-md-6">
-                    <img src="images/logo.png" alt="Skejooler Logo"/>
+        <div class="container-fluid index-container">
+            <div class="row top-home">
+                <div class="row top-bar">
+                    <div class="col-md-6">
+                        <a href="Index.aspx"><img src="images/logo.png" alt="Skejooler Logo"/></a>
+                    </div>
+                    <div class="col-md-6">
+                        <nav class="navbar navbar-default home-nav" role="navigation">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="CentreInfo.aspx">INVIGILIATION CENTRE INFO</a></li>
+                                                <li><a href="JobPostings.aspx">JOB POSTINGS</a></li>
+                                                <li><a href="OnlinePrograms.aspx">ONLINE PROGRAMS</a></li>
+                                                <li><a href="Articles.aspx">ARTICLES</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="Help.aspx">HELP</a></li>
+                                        <li><a class="btn-signup"href="#">SIGN-UP</a></li>
+                                        <li><a class="btn-signup"href="Login.aspx">LOGIN</a></li>
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <nav class="navbar navbar-default home-nav" role="navigation">
-                      <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>BOOK YOUR EXAM</h1>
+                            <p><a class="find-btn" href="Map.aspx">GET STARTED</a></p>
                         </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                          <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="caret"></span></a>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a href="CentreInfo.aspx">Invigilation Centre Info</a></li>
-                                <li><a href="JobPostings.aspx">Job Postings</a></li>
-                                <li><a href="OnlinePrograms.aspx">Online Programs</a></li>
-                                <li><a href="Articles.aspx">Articles</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="Help.aspx">HELP</a></li>
-                            <li><a class="btn-signup"href="#">SIGN-UP</a></li>
-                            <li><a class="btn-signup"href="Login.aspx">LOGIN</a></li>
-                          </ul>
-                        </div><!-- /.navbar-collapse -->
-                      </div><!-- /.container-fluid -->
-                    </nav>
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                <div class="col-md-12">
-                    <h1>BOOK YOUR EXAM</h1>
-                    <p><a class="find-btn" href="Map.aspx">GET STARTED</a></p>
-                </div>
-                </div>
-            </div>
-        </div><!--end of top-home-->
-        <div class="container mid-row">
+            </div><!--end top-home-->
+            <div class="container mid-row"><!--mid-row-->
             <div class="row">
                 <div class="col-md-12">
                     <h2>what is Skejooler?</h2>
@@ -115,11 +115,11 @@
                         <h3>online programs</h3>
                     </a>
                 </div>
-            </div><!--features-->
-        </div>
-        <div class="footer">
+            </div><!--end features-->
+        </div><!--end mid-row-->
+            <div class="footer"><!--footer-->
             <div class="container">
-                <div class="row">
+                <div class="row bottom-nav-links">
                     <div class="col-md-4 footer-skejooler">
                         <h4 >SKEJOOLER</h4>
                         <ul>
@@ -140,20 +140,20 @@
                     </div>
                     <div class="col-md-3 footer-social">
                         <h4>FOLLOW US</h4>
-                            <img class="social" src="images/facebook.jpg" alt="Facebook Icon"/>
-                            <img class="social" src="images/google_plus.jpg" alt="Google Plus Icon"/>
+                        <img class="social" src="images/facebook.jpg" alt="Facebook Icon"/>
+                        <img class="social" src="images/google_plus.jpg" alt="Google Plus Icon"/>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row copyright">
                     <div class="col-md-12">
-                        <p class="copy">&copy;2014 Skejooler Industries</p>
+                        <p>&copy;2014 Skejooler Industries</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div><!--End footer-->
+        </div>><!--end index-container-->
     </form>
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="script/bootstrap.min.js"></script>
