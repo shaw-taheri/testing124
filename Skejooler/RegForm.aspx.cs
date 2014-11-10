@@ -21,14 +21,13 @@ namespace Skejooler
         protected void regFormSubmit_Click(object sender, EventArgs e)
         {
 
-            string connString = "server=127.0.0.1;user id=root;password=root;database=skejooler";    
+            string connString = "server=127.0.0.1;user id=root;password=;database=skejooler";    
             MySqlConnection RegDataSource = new MySqlConnection(connString);
             MySqlCommand command = RegDataSource.CreateCommand();
             command.CommandText = "INSERT INTO registration_form(fName, lName, email, preferred_date1, preferred_date2, preferred_time, school_name, school_street_name, school_city, school_province, school_contact, school_contact_num, school_contact_email, course_num, additional_req, test_mid_final, test_paper_online) Values('" + this.examineeFName.Text + "','" + this.examineeLName.Text + "','" + this.examineeEmail.Text + "','" + this.examinee1stDate.Text + "','" + this.examinee2ndDate.Text + "','" + this.AppointmentTime.Text + "','" + this.institutionName.Text + "','" + this.insitutionStreet.Text + "','" + this.institutionCity.Text + "','" + this.institutionProvince.Text + "','" + this.instiContactPerson.Text + "','" + this.instiContactNumber.Text + "','" + this.contactEmail.Text + "','" + this.courseNumber.Text + "','" + this.additionalInfo.Text + "','" + this.examMidOrFinal.Text + "','" + this.typeOfExam.Text + "');'";
 
             try
             {
-                MessageBox.Show("Your Form is being submitted. Click Ok to continue.");
                 RegDataSource.Open();
                 command.ExecuteNonQuery();
             }
