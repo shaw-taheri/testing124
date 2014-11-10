@@ -89,6 +89,7 @@
 
 .find-btn{
     background-color:#1DA696;
+    opacity:0.6;
     color:#FFF;
     padding:20px 40px;
     text-decoration:none;
@@ -100,7 +101,15 @@
 
 .find-btn:hover{
     text-decoration:none;
+    opacity:1.0;
     color:#fff;
+}
+
+.find-btn:active{
+    text-decoration:none;
+    color:#fff;
+    background-color:#007165;
+    opacity:1.0;
 }
 
 .mid-row h2 {
@@ -173,7 +182,7 @@
 }
 
 .footer a:hover{
-    color: #777;
+    color: #333;
     text-decoration: none;
 }
 
