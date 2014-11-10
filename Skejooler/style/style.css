@@ -264,7 +264,7 @@
 
 }
 
-/******CONSTRUCTION-PAGES*******/
+/****** CONSTRUCTION PAGES *******/
 
 .construction-page{
     background-image:url("../images/Stairs.jpg");
@@ -290,4 +290,10 @@
         font-family: 'Patua One', cursive;
         font-style: italic; 
         font-size: 2em;
+    }
+
+    /****** REGISTATION FORM *******/
+
+    .reg-form-container{
+        /*/padding: 0px 0px 0px 50px;*/
     }

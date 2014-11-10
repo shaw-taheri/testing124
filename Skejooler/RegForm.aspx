@@ -2,8 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">     
-        <h1>Exam Registration Form</h1>
-        <h2>Examinee Information</h2>
+    <div class="container-fluid reg-form-container">
+        <div class="col-md-12">        
+            <div class="row">
+                <h1>Exam Registration Form</h1>
+                <h2>Examinee Information</h2>
+            </div>
             <div id="examineeInfo">
                 <table style="width:75%; margin-bottom: 0px;">
                     <tr>
@@ -198,4 +202,6 @@
                 <asp:Label ID="RegLabel" runat="server" ForeColor="Red"></asp:Label>
                 <br />
             </div>
+        </div><!--end col-md-12-->
+    </div><!--end reg-form-contaner-->
 </asp:Content>
