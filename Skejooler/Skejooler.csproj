@@ -90,15 +90,13 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="style\indexStyle.css" />
-    <Content Include="style\masterStyle.css" />
+    <Content Include="style\Style.css" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="OnlinePrograms.aspx" />
     <Content Include="RegForm.aspx" />
     <Content Include="Resources.aspx" />
-    <Content Include="style\style.css" />
     <Content Include="UserAccountCreation.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
