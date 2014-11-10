@@ -10,7 +10,7 @@
     <title>Skejooler</title>
     <link href="style/bootstrap.min.css" rel="stylesheet"/>
     <link href="style/Style.css" rel="stylesheet"/>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,700,600,400' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'/>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
