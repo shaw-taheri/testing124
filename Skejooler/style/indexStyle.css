@@ -4,15 +4,14 @@
 }
 
 .index-container{
-    padding: 0;
+    padding: 0px;
 }
 
 /*Header*/
 
 .top-home{
     background-image:url(/images/Map.jpg);
-    background-repeat:no-repeat;
-    background-size:100%;
+    background-size:cover;
     height: 600px;
     padding: 20px 20px;
     margin-right:0px
@@ -219,3 +218,64 @@
     border-top: solid thin #fff;
     font-size:8px;
 }
+
+
+
+/******MASTER*******/
+
+.master-nav{
+    background-color: #1DA696;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.master-logo-bar{
+    background-color: #eee;
+    padding: 0px 26px;
+}
+
+.navbar-default .navbar-nav>li>a.master-btn-signup{
+   background-color:#777;
+   border-radius:5px;
+   color:#fff;
+   margin-left:10px;
+   font-weight:bold;
+}
+
+.navbar-default .navbar-nav>li>a.master-btn-signup:hover{
+   background-color:#F29728;
+   color:#fff;
+}
+
+.master-btn-signup:hover{
+    color: #F29728;
+
+}
+
+/******CONSTRUCTION-PAGES*******/
+
+.construction-page{
+    background-image:url("../images/Stairs.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 800px;
+    color: #fff;
+}
+
+    .construction-page h2{
+        text-align: center;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        margin: 0px 0px 40px 0px;
+        padding-top: 15%;
+    }
+
+    .construction-page p {
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Patua One', cursive;
+        font-style: italic; 
+        font-size: 2em;
+    }

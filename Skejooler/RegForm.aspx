@@ -1,9 +1,8 @@
 ﻿<%@ Page Title="Registration Form" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="RegForm.aspx.cs" Inherits="Skejooler.RegForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <body>
-      <h1>Exam Registration Form</h1>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">     
+        <h1>Exam Registration Form</h1>
         <h2>Examinee Information</h2>
             <div id="examineeInfo">
                 <table style="width:75%; margin-bottom: 0px;">
@@ -198,7 +197,5 @@
                 <br />
                 <asp:Label ID="RegLabel" runat="server" ForeColor="Red"></asp:Label>
                 <br />
-
             </div>
-    </body>
 </asp:Content>
