@@ -223,15 +223,27 @@
 
 /******MASTER*******/
 
+.master-header{
+    padding: 0px;
+    margin: 0px;
+}
+
 .master-nav{
     background-color: #1DA696;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    border-radius: 0px;
+}
+
+.master-nav-bar{
+    margin-right: 0px;
+    padding-right: 0px;
 }
 
 .master-logo-bar{
     background-color: #eee;
     padding: 0px 26px;
+    margin-right:0px;
 }
 
 .navbar-default .navbar-nav>li>a.master-btn-signup{

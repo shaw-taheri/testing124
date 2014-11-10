@@ -20,7 +20,7 @@
         <div class="container-fluid index-container">
             <div class="row master-header">
                 <div class="row master-nav-bar">
-                    <div class="col-md-12">
+                    <div class="col-md-12 master-nav-bar">
                          <nav class="navbar navbar-default master-nav" role="navigation">
                             <div class="container-fluid">
                                 <!-- Brand and toggle get grouped for better mobile display -->
