@@ -1,17 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Map.aspx.cs" Inherits="Skejooler.Map" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="style/style.css" rel="stylesheet" />    
+    <link href="style/Style.css" rel="stylesheet" />    
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?libraries=places?key=AIzaSyCTKSdSyVw_EXKaW_IubVgS6g0izh6_6R4">
     </script>
     
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">  
-   
-   
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">   
     
+    <div id="mapArea"></div>
+    <asp:Literal ID="Literal1" runat="server"></asp:Literal> 
     
     
     <div id="dataList">
@@ -22,8 +22,6 @@ GROUP BY city
 "></asp:SqlDataSource>
        <br />
        <br />
-    <div id="mapArea"></div>
-    <asp:Literal ID="Literal1" runat="server"></asp:Literal> 
    
     <asp:DataList ID="DataList1" runat="server" DataSourceID="CentreList">
         <ItemTemplate>
