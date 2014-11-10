@@ -130,22 +130,22 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator examDate2ndReq;
         
         /// <summary>
-        /// prefAppoint control.
+        /// AppointmentTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList prefAppoint;
+        protected global::System.Web.UI.WebControls.TextBox AppointmentTime;
         
         /// <summary>
-        /// prefAppointReq control.
+        /// appointmentTimeReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator prefAppointReq;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator appointmentTimeReq;
         
         /// <summary>
         /// institutionName control.
@@ -166,22 +166,49 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator instNameReq;
         
         /// <summary>
-        /// instAddress control.
+        /// insitutionStreet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox instAddress;
+        protected global::System.Web.UI.WebControls.TextBox insitutionStreet;
         
         /// <summary>
-        /// instAddressReq control.
+        /// institutionStreetReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator instAddressReq;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator institutionStreetReq;
+        
+        /// <summary>
+        /// institutionCity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox institutionCity;
+        
+        /// <summary>
+        /// institutionCityReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator institutionCityReq;
+        
+        /// <summary>
+        /// institutionProvince control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList institutionProvince;
         
         /// <summary>
         /// instiContactPerson control.
@@ -283,58 +310,31 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator courseNumberReq;
         
         /// <summary>
-        /// midOrFinal control.
+        /// examMidOrFinal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList midOrFinal;
+        protected global::System.Web.UI.WebControls.DropDownList examMidOrFinal;
         
         /// <summary>
-        /// midOrFinalReq control.
+        /// typeOfExam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator midOrFinalReq;
+        protected global::System.Web.UI.WebControls.DropDownList typeOfExam;
         
         /// <summary>
-        /// examType control.
+        /// computerReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList examType;
-        
-        /// <summary>
-        /// examTypeReq control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator examTypeReq;
-        
-        /// <summary>
-        /// compReq control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList compReq;
-        
-        /// <summary>
-        /// compReqReq control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator compReqReq;
+        protected global::System.Web.UI.WebControls.DropDownList computerReq;
         
         /// <summary>
         /// additionalInfo control.
@@ -362,15 +362,6 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary regFormValidationSum;
-        
-        /// <summary>
-        /// RegDataSource control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource RegDataSource;
         
         /// <summary>
         /// regFormSubmit control.

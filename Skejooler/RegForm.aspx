@@ -55,11 +55,8 @@
                     <tr>
                         <td>Preferred Appointment Time: </td>
                         <td>
-                            <asp:RadioButtonList ID="prefAppoint" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
-                                <asp:ListItem>Morning</asp:ListItem>
-                                <asp:ListItem>Afternoon</asp:ListItem>
-                            </asp:RadioButtonList>
-    &nbsp;<asp:RequiredFieldValidator ID="prefAppointReq" runat="server" ControlToValidate="prefAppoint" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                            <asp:TextBox ID="AppointmentTime" runat="server" Width="550px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="appointmentTimeReq" runat="server" ControlToValidate="AppointmentTime" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                     </tr>
                 </table>
@@ -71,17 +68,44 @@
             <div id="institutionInfo">
                 <table style="width:75%">
                     <tr>
-                        <td>Name: </td>
+                        <td>School Name: </td>
                           <td>
                             <asp:TextBox ID="institutionName" runat="server" Width="550px"></asp:TextBox>
                               <asp:RequiredFieldValidator ID="instNameReq" runat="server" ControlToValidate="institutionName" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
-                        <td>Address:</td>
+                        <td>Street Address:&nbsp; </td>
                           <td>
-                            <asp:TextBox ID="instAddress" runat="server" Width="550px"></asp:TextBox>
-                              <asp:RequiredFieldValidator ID="instAddressReq" runat="server" ControlToValidate="instAddress" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                              <asp:TextBox ID="insitutionStreet" runat="server" Width="550px"></asp:TextBox>
+                              <asp:RequiredFieldValidator ID="institutionStreetReq" runat="server" ControlToValidate="insitutionStreet" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City: </td>
+                          <td>
+                              <asp:TextBox ID="institutionCity" runat="server" Width="550px"></asp:TextBox>
+                              <asp:RequiredFieldValidator ID="institutionCityReq" runat="server" ControlToValidate="institutionCity" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Province: </td>
+                          <td>
+                              <asp:DropDownList ID="institutionProvince" runat="server">
+                                <asp:ListItem>BC</asp:ListItem>
+                                <asp:ListItem>AB</asp:ListItem>
+                                <asp:ListItem>SK</asp:ListItem>
+                                <asp:ListItem>MB</asp:ListItem>
+                                <asp:ListItem>ON</asp:ListItem>
+                                <asp:ListItem>QC</asp:ListItem>
+                                <asp:ListItem>PE</asp:ListItem>
+                                <asp:ListItem>NB</asp:ListItem>
+                                <asp:ListItem>NS</asp:ListItem>
+                                <asp:ListItem>YT</asp:ListItem>
+                                <asp:ListItem>NT</asp:ListItem>
+                                <asp:ListItem>NU</asp:ListItem>
+                                <asp:ListItem>NL</asp:ListItem>
+                              </asp:DropDownList>
                         </td>
                     </tr>
                     <tr>
@@ -126,32 +150,29 @@
                     <tr>
                         <td>Midterm or Final: </td>
                         <td>
-                            <asp:RadioButtonList ID="midOrFinal" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+                            <asp:DropDownList ID="examMidOrFinal" runat="server">
                                 <asp:ListItem>Midterm</asp:ListItem>
                                 <asp:ListItem>Final</asp:ListItem>
-                            </asp:RadioButtonList>
-                            <asp:RequiredFieldValidator ID="midOrFinalReq" runat="server" ControlToValidate="midOrFinal" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                            </asp:DropDownList>
                         </td>
                     </tr>
                     <tr>
                         <td>Type of Exam: </td>
                         <td>
-                            <asp:RadioButtonList ID="examType" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+                            <asp:DropDownList ID="typeOfExam" runat="server">
                                 <asp:ListItem>Paper</asp:ListItem>
-                                <asp:ListItem>Computer</asp:ListItem>
                                 <asp:ListItem>Online</asp:ListItem>
-                            </asp:RadioButtonList>
-                            <asp:RequiredFieldValidator ID="examTypeReq" runat="server" ControlToValidate="examType" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                                <asp:ListItem>Computer</asp:ListItem>
+                            </asp:DropDownList>
                         </td>
                     </tr>
                     <tr>
-                        <td>Computer Required: </td>
+                        <td>Computer Required? </td>
                         <td>
-                            <asp:RadioButtonList ID="compReq" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+                            <asp:DropDownList ID="computerReq" runat="server">
                                 <asp:ListItem>Yes</asp:ListItem>
                                 <asp:ListItem>No</asp:ListItem>
-                            </asp:RadioButtonList>
-                            <asp:RequiredFieldValidator ID="compReqReq" runat="server" ControlToValidate="compReq" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                            </asp:DropDownList>
                         </td>
                     </tr>
                     <tr>
@@ -169,11 +190,10 @@
                 </table>
                 <asp:ValidationSummary ID="regFormValidationSum" runat="server" DisplayMode="List" ForeColor="Red" HeaderText="There was an error in submitting the form. Please ensure all information is included and in the right format." />
                 <br />
-                <asp:SqlDataSource ID="RegDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnect %>" ProviderName="<%$ ConnectionStrings:skejoolerConnect.ProviderName %>" SelectCommand="SELECT * FROM registration_form;" InsertCommand="INSERT * INTO registration_form;"></asp:SqlDataSource>
                 <br />
                 <br />
                 <br />
-                <asp:Button ID="regFormSubmit" runat="server" Text="Submit" />
+                <asp:Button ID="regFormSubmit" runat="server" Text="Submit" OnClick="regFormSubmit_Click" />
                 <br />
                 <br />
                 <asp:Label ID="RegLabel" runat="server" ForeColor="Red"></asp:Label>
