@@ -51,7 +51,7 @@
                                     </tr>
                                     <tr>
                                         <td class="results-lbl"><span>Cost: </span></td>
-                                        <td><asp:Label ID="costLabel" runat="server" Text='<%# Eval("cost") %>' /></td>
+                                        <td><span>&#36</span><asp:Label ID="costLabel" runat="server" Text='<%# Eval("cost") %>'/></td>
                                     </tr>               
                                 </table>
                                 <hr />
