@@ -23,7 +23,7 @@
 
 .home-nav{
     float: right;
-    width: 500px;
+    width: 580px;
 }
 
 .nav a{
@@ -42,11 +42,6 @@
 .navbar-default .navbar-nav>li>a.btn-signup:hover{
    background-color:#F29728;
    color:#fff;
-}
-
-.btn-signup:hover{
-    color: #F29728;
-
 }
 
 .navbar-default {
@@ -76,7 +71,7 @@
 }
 
 
-/*Centre*/
+/*****Centre*****/
 
 #desk {
     width:510px;
@@ -88,19 +83,28 @@
 }
 
 .find-btn{
-    background-color:#1DA696;
-    color:#FFF;
-    padding:20px 40px;
-    text-decoration:none;
+    background-color: #1DA696;
+    color: #FFF;
+    padding: 20px 40px;
+    text-decoration: none;
     font-size: 2em;
-    border-radius:10px;
+    border-radius: 10px;
     font-family: 'Patua One', cursive;
-    font-style:italic;
+    font-style: italic;
+    opacity: 0.6;
 }
 
 .find-btn:hover{
-    text-decoration:none;
-    color:#fff;
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+}
+
+.find-btn:active{
+    text-decoration: none;
+    opacity: 1;
+    color: #fff;
+    background-color: #009484;
 }
 
 .mid-row h2 {
@@ -196,7 +200,7 @@
 }
 
 .footer-centers h4{
-    width: 200px;
+    width: 205px;
 }
 
 .footer-social {
@@ -264,7 +268,7 @@
 
 }
 
-/******CONSTRUCTION-PAGES*******/
+/****** UNDER CONSTRUCTION-PAGES *******/
 
 .construction-page{
     background-image:url("../images/Stairs.jpg");
@@ -292,11 +296,31 @@
         font-size: 2em;
     }
 
-    /******* MAP *******/
+/******* MAP *******/
 
-    #mapArea{
-        width: 500px;
-        height: 500px;
-        float: left;
+.filter-bar{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
 
-    }
+.map-row{
+    height: 670px;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.map-col{
+    height:100%;
+}
+
+#mapArea{
+    width: 500px;
+    height: 610px;
+}
+
+.list-col{
+    max-height: 100%;
+    height: 610px;
+    overflow-y:scroll;
+    width: 450px; 
+}

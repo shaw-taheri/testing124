@@ -45,6 +45,7 @@
                                                 <li><a href="Articles.aspx">ARTICLES</a></li>
                                             </ul>
                                         </li>
+                                        <li><a href="RegForm.aspx">REGISTRATION FORM</a></li>
                                         <li><a href="Help.aspx">HELP</a></li>
                                         <li><a class="btn-signup"href="#">SIGN-UP</a></li>
                                         <li><a class="btn-signup"href="Login.aspx">LOGIN</a></li>
