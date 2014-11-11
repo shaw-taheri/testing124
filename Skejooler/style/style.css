@@ -334,3 +334,74 @@
     background-color:#fff;
 }
 
+/******* REGFORM *******/
+
+.reg-form-container{
+    background-image:url("../images/sky.jpg");
+    background-size: cover;
+}
+
+.reg-form-row{
+    padding-bottom:15px;
+}
+
+.reg-form-lbl{
+    padding-left:25%;
+    font-size:20px;
+    color: #fff;
+}
+
+.reg-form-title{
+    text-align:center;
+    font-size:60px;
+    color: #fff;
+    padding-top:30px;
+}
+
+.examinee-info-title{
+    text-align:center;
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+    padding-bottom:15px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.institution-info-title{
+    text-align:center;
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+    padding-bottom:15px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.exam-info-title{
+    text-align:center;
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+    padding-bottom:15px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.submit-button{
+    text-align: center;
+}
+
+.regform-submit{
+    background-color: #1DA696;
+    color: #FFF;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 2em;
+    border-radius: 10px;
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+    margin: 40px 0px;
+}
+
+.regform-errors{
+    text-align:center;
+    padding-top: 20px;
+}

@@ -13,6 +13,15 @@ namespace Skejooler {
     public partial class RegForm {
         
         /// <summary>
+        /// regFormValidationSum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary regFormValidationSum;
+        
+        /// <summary>
         /// examineeFName control.
         /// </summary>
         /// <remarks>
@@ -353,15 +362,6 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox invigFee;
-        
-        /// <summary>
-        /// regFormValidationSum control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary regFormValidationSum;
         
         /// <summary>
         /// regFormSubmit control.
