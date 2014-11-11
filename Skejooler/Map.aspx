@@ -24,26 +24,36 @@
                         <asp:SqlDataSource ID="CityDropDown" runat="server" ConnectionString="<%$ ConnectionStrings:invigSkejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:invigSkejoolerConnectionString.ProviderName %>" SelectCommand="SELECT * FROM invigilation_centre GROUP BY city"></asp:SqlDataSource>
                         <asp:DataList ID="DataList1" runat="server" DataSourceID="CentreList">
                             <ItemTemplate>
-                                Center:
-                                <asp:Label ID="nameLabel" runat="server" Text='<%# Eval("name") %>' />
-                                <br />
-                                Street:
-                                <asp:Label ID="street_nameLabel" runat="server" Text='<%# Eval("street_name") %>' />
-                                <br />
-                                City:
-                                <asp:Label ID="cityLabel" runat="server" Text='<%# Eval("city") %>' />
-                                <br />
-                                Province:
-                                <asp:Label ID="provinceLabel" runat="server" Text='<%# Eval("province") %>' />
-                                <br />
-                                Postal:
-                                <asp:Label ID="postal_codeLabel" runat="server" Text='<%# Eval("postal_code") %>' />
-                                <br />
-                                Phone:
-                                <asp:Label ID="phone_numLabel" runat="server" Text='<%# Eval("phone_num") %>' />
-                                <br />
-                                Cost:
-                                <asp:Label ID="costLabel" runat="server" Text='<%# Eval("cost") %>' />
+                                <table class="results-tbl">
+                                    <tr>
+                                        <td class="results-lbl"><span>Center: </span></td>
+                                        <td><asp:Label ID="nameLabel" runat="server" Text='<%# Eval("name") %>' /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="results-lbl"><span>Street: </span></td>
+                                        <td><asp:Label ID="street_nameLabel" runat="server" Text='<%# Eval("street_name") %>' /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="results-lbl"><span>City: </span></td>
+                                        <td><asp:Label ID="cityLabel" runat="server" Text='<%# Eval("city") %>' /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="results-lbl"><span>Province: </span></td>
+                                        <td><asp:Label ID="provinceLabel" runat="server" Text='<%# Eval("province") %>' /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="results-lbl"><span>Postal: </span></td>
+                                        <td><asp:Label ID="postal_codeLabel" runat="server" Text='<%# Eval("postal_code") %>' /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="results-lbl"><span>Phone: </span></td>
+                                        <td><asp:Label ID="phone_numLabel" runat="server" Text='<%# Eval("phone_num") %>' /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="results-lbl"><span>Cost: </span></td>
+                                        <td><asp:Label ID="costLabel" runat="server" Text='<%# Eval("cost") %>' /></td>
+                                    </tr>               
+                                </table>
                                 <hr />
                             </ItemTemplate>
                         </asp:DataList>

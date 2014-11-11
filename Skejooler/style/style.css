@@ -324,3 +324,7 @@
     overflow-y:scroll;
     width: 450px; 
 }
+
+.results-lbl{
+    width:100px;
+}
