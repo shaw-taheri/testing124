@@ -318,13 +318,19 @@
     height: 610px;
 }
 
-.list-col{
+.list-col {
     max-height: 100%;
     height: 610px;
-    overflow-y:scroll;
-    width: 450px; 
+    overflow-y: scroll;
+    width: 50%;
 }
 
 .results-lbl{
     width:100px;
 }
+
+.results-well{
+    height: 610px;
+    background-color:#fff;
+}
+
