@@ -26,7 +26,7 @@ namespace Skejooler
                 string connString = "server=127.0.0.1;user id=root;password=;database=skejooler";
                 MySqlConnection RegDataSource = new MySqlConnection(connString);
                 MySqlCommand command = RegDataSource.CreateCommand();
-                command.CommandText = "INSERT INTO registration_form(fName, lName, email, preferred_date1, preferred_date2, preferred_time, school_name, school_street_name, school_city, school_province, school_contact, school_contact_num, school_contact_email, course_num, additional_req, fee_covered, test_mid_final, test_paper_online) Values('"
+                command.CommandText = "INSERT INTO registration_form(fName, lName, email, preferred_date1, preferred_date2, preferred_time, school_name, school_street_name, school_city, school_province, school_contact, school_contact_num, school_contact_email, course_num, additional_req, fee_covered, test_mid_final, test_paper_online, centre_Id) Values('"
                     + this.examineeFName.Text + "','"
                     + this.examineeLName.Text + "','"
                     + this.examineeEmail.Text + "','"
@@ -44,7 +44,8 @@ namespace Skejooler
                     + this.additionalInfo.Text + "','"
                     + this.invigFee.Text + "','"
                     + this.examMidOrFinal.Text + "','"
-                    + this.typeOfExam.Text + "');";
+                    + this.typeOfExam.Text + "','"
+                    + this.centerNameDDL.Text + "');";
 
                 try
                 {

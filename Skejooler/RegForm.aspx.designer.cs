@@ -22,6 +22,24 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.ValidationSummary regFormValidationSum;
         
         /// <summary>
+        /// centerNameDDL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList centerNameDDL;
+        
+        /// <summary>
+        /// RegDropDownSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource RegDropDownSource;
+        
+        /// <summary>
         /// examineeFName control.
         /// </summary>
         /// <remarks>
