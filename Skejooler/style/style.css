@@ -44,6 +44,11 @@
    color:#fff;
 }
 
+.navbar-default .navbar-nav>li>a.btn-signup:active{
+   background-color:#CA740B;
+   color:#fff;
+}
+
 .navbar-default {
     background-color: transparent;
     border: 0px;
@@ -262,6 +267,12 @@
    background-color:#F29728;
    color:#fff;
 }
+
+.navbar-default .navbar-nav>li>a.master-btn-signup:active{
+   background-color:#CA740B;
+   color:#fff;
+}
+
 
 .master-btn-signup:hover{
     color: #F29728;
