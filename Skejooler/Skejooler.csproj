@@ -120,6 +120,7 @@
       <DependentUpon>AdminProfile.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\Reg_form.cs" />
+    <Content Include="App_Code\Invig_centre.cs" />
     <Compile Include="Articles.aspx.cs">
       <DependentUpon>Articles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
