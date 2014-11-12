@@ -345,9 +345,10 @@
 }
 
 .reg-form-lbl{
-    padding-left:25%;
+    /**padding-left:25%;*/
     font-size:20px;
     color: #fff;
+    text-align:right;
 }
 
 .reg-form-title{
