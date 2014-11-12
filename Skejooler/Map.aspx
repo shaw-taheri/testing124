@@ -12,7 +12,7 @@
     <div class="container map-container">
         <div class="col-md-12">
             <div class="row filter-bar">
-                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="CityDropDown" DataTextField="city" DataValueField="city" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="CityDropDown" DataTextField="city" DataValueField="city" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" OnDataBinding="Page_Load" OnDataBound="Page_Load" OnLoad="Page_Load" OnPreRender="Page_Load"></asp:DropDownList>
             </div>
             <div class="row map-row">
                 <div class="col-md-6 map-col">
