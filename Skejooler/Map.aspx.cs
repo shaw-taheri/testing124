@@ -14,42 +14,47 @@ namespace Skejooler
         protected void Page_Load(object sender, EventArgs e)
         {
             string markers = GetMarkers();
+
+            //instatiate google map
             Literal1.Text = @"
-     <script type='text/javascript'>
+             <script type='text/javascript'>
      
-    function initialize() { 
+                function initialize() { 
     
-    var lat = 55.000;
-    var long = -125.1500;
+                    var lat = 55.000;
+                    var long = -125.1500;
    
-    var mapOptions = {
-     center: new google.maps.LatLng(lat, long),
-     zoom: 5,
-     mapTypeId: google.maps.MapTypeId.ROADMAP
-     };
-    var infoWindow = new google.maps.InfoWindow();
-     var myMap = new google.maps.Map(document.getElementById('mapArea'),
-     mapOptions);"
+                    var mapOptions = {
+                         center: new google.maps.LatLng(lat, long),
+                         zoom: 5,
+                         mapTypeId: google.maps.MapTypeId.ROADMAP
+                     };
+                    var infoWindow = new google.maps.InfoWindow();
+                    var myMap = new google.maps.Map(document.getElementById('mapArea'),
+                     mapOptions);"
 
+                     + markers +
+             
+                @"}     
+                google.maps.event.addDomListener(window, 'load', initialize);
 
-            + markers +
-            @"}
-            
-            google.maps.event.addDomListener(window, 'load', initialize);
-
-     </script>";
+             </script>";
         }
 
+        // create markers for the map based on lat and long in database
         protected string GetMarkers()
         {
             string markers = "";
+            // connect to database
             using (MySqlConnection con = new MySqlConnection("Server=localhost;Database=skejooler;UID=root;Password="))
             {
+                //select lat and long from database
                 MySqlCommand cmd = new MySqlCommand("Select latitude, longitude, city, name FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedValue.ToString() + "'", con);
                 con.Open();
                 MySqlDataReader reader = cmd.ExecuteReader();
                 int i = 0;
 
+                //create markers
                 while (reader.Read())
                 {
                     i++;
@@ -72,6 +77,7 @@ namespace Skejooler
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //when city is changed in drop down menu, redraw markers
             CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedValue.ToString() + "'";
            
         }
