@@ -19,12 +19,12 @@ namespace Skejooler
      
     function initialize() { 
     
-    var lat = 49.248657;
-    var long = -123.001364;
+    var lat = 55.000;
+    var long = -125.1500;
    
     var mapOptions = {
      center: new google.maps.LatLng(lat, long),
-     zoom: 8,
+     zoom: 5,
      mapTypeId: google.maps.MapTypeId.ROADMAP
      };
     var infoWindow = new google.maps.InfoWindow();
@@ -73,7 +73,7 @@ namespace Skejooler
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
             CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedValue.ToString() + "'";
-            
+           
         }
 
         
