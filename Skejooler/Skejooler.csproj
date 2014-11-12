@@ -63,7 +63,6 @@
     <Content Include="AdminProfile.aspx" />
     <Content Include="Articles.aspx" />
     <Content Include="CentreInfo.aspx" />
-    <Content Include="Form1.aspx" />
     <Content Include="Help.aspx" />
     <Content Include="images\Books.jpg" />
     <Content Include="images\bricks.jpg" />
@@ -84,7 +83,6 @@
     <Content Include="JobPostings.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Map.aspx" />
-    <Content Include="maptesting.aspx" />
     <Content Include="Master.Master" />
     <Content Include="app.config" />
     <None Include="Web.Debug.config">
@@ -135,13 +133,6 @@
     <Compile Include="CentreInfo.aspx.designer.cs">
       <DependentUpon>CentreInfo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Form1.aspx.cs">
-      <DependentUpon>Form1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Form1.aspx.designer.cs">
-      <DependentUpon>Form1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Help.aspx.cs">
       <DependentUpon>Help.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -176,13 +167,6 @@
     </Compile>
     <Compile Include="Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="maptesting.aspx.cs">
-      <DependentUpon>maptesting.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="maptesting.aspx.designer.cs">
-      <DependentUpon>maptesting.aspx</DependentUpon>
     </Compile>
     <Compile Include="OnlinePrograms.aspx.cs">
       <DependentUpon>OnlinePrograms.aspx</DependentUpon>
