@@ -13,6 +13,15 @@ namespace Skejooler {
     public partial class AddInvigilationCenterForm {
         
         /// <summary>
+        /// invigFormValidationSum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary invigFormValidationSum;
+        
+        /// <summary>
         /// invigFormName control.
         /// </summary>
         /// <remarks>
@@ -22,22 +31,22 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.TextBox invigFormName;
         
         /// <summary>
-        /// invigFormNameReq control.
+        /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormNameReq;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// invigFormNameVal control.
+        /// RegularExpressionValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator invigFormNameVal;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
         /// invigFormCity control.
@@ -218,15 +227,6 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox invigFormNotes;
-        
-        /// <summary>
-        /// invigFormValidationSum control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary invigFormValidationSum;
         
         /// <summary>
         /// InvigFormSubmit control.

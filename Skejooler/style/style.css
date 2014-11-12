@@ -12,7 +12,7 @@
 .top-home{
     background-image:url(/images/Map.jpg);
     background-size:cover;
-    height: 600px;
+    height: 550px;
     padding: 20px 20px;
     margin-right:0px
 }
@@ -41,6 +41,11 @@
 
 .navbar-default .navbar-nav>li>a.btn-signup:hover{
    background-color:#F29728;
+   color:#fff;
+}
+
+.navbar-default .navbar-nav>li>a.btn-signup:active{
+   background-color:#CA740B;
    color:#fff;
 }
 
@@ -263,6 +268,12 @@
    color:#fff;
 }
 
+.navbar-default .navbar-nav>li>a.master-btn-signup:active{
+   background-color:#CA740B;
+   color:#fff;
+}
+
+
 .master-btn-signup:hover{
     color: #F29728;
 
@@ -329,6 +340,7 @@
     width:100px;
 }
 
+
 .list-col{
 }
 
@@ -344,9 +356,10 @@
 }
 
 .reg-form-lbl{
-    padding-left:25%;
+    /**padding-left:25%;*/
     font-size:20px;
     color: #fff;
+    text-align:right;
 }
 
 .reg-form-title{
@@ -402,4 +415,38 @@
 .regform-errors{
     text-align:center;
     padding-top: 20px;
+}
+
+.fee-col{
+    padding-top:15px;
+}
+
+.reg-text-box{
+    border-radius:5px;
+}
+
+/******* INVIGFORM *******/
+
+.add-invig-title{
+    text-align:center;
+    font-size:60px;
+    color: #333;
+    padding-top:30px;
+    padding-bottom: 20px;
+}
+
+.invig-form-row{
+    padding-bottom:15px;
+}
+
+.invig-form-lbl{
+    font-size:20px;
+    color: #333;
+    text-align:right;
+}
+
+.invig-errors{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

@@ -11,8 +11,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">   
     <div class="container map-container">
         <div class="col-md-12">
-            <div class="row filter-bar">
-                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="CityDropDown" DataTextField="city" DataValueField="city" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+            <div class="row filter-bar">Filter Results by City: 
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="CityDropDown" DataTextField="city" DataValueField="city" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" OnDataBinding="Page_Load" OnDataBound="Page_Load" OnLoad="Page_Load" OnPreRender="Page_Load"></asp:DropDownList>
             </div>
             <div class="row map-row">
                 <div class="col-md-6 map-col">
@@ -57,7 +57,7 @@
                                 <hr />
                             </ItemTemplate>
                         </asp:DataList>
-                        <asp:SqlDataSource ID="CentreList" runat="server" ConnectionString="<%$ ConnectionStrings:invigSkejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:invigSkejoolerConnectionString.ProviderName %>" SelectCommand="SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city='Vancouver'">
+                        <asp:SqlDataSource ID="CentreList" runat="server" ConnectionString="<%$ ConnectionStrings:invigSkejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:invigSkejoolerConnectionString.ProviderName %>" SelectCommand="SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre ORDER BY city">
                             <SelectParameters>
                                 <asp:ControlParameter ControlID="DropDownList1" Name="city" PropertyName="SelectedValue" Type="String" />
                             </SelectParameters>
