@@ -424,3 +424,22 @@
 .reg-text-box{
     border-radius:5px;
 }
+
+/******* INVIGFORM *******/
+
+.add-invig-title{
+    text-align:center;
+    font-size:60px;
+    color: #333;
+    padding-top:30px;
+}
+
+.invig-form-row{
+    padding-bottom:15px;
+}
+
+.invig-form-lbl{
+    font-size:20px;
+    color: #333;
+    text-align:right;
+}
