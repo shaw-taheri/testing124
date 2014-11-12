@@ -106,6 +106,25 @@
             <div class="row submit-button reg-form-row">
                 <asp:Button ID="InvigFormSubmit" runat="server" Text="Submit" CssClass="regform-submit" OnClick="InvigFormSubmit_Click" />
             </div>
+            <div class="row add-gridview">
+                <div class="col-md-12">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="InvigFormSource">
+                        <Columns>
+                            <asp:BoundField DataField="Centre Name" HeaderText="Centre Name" SortExpression="Centre Name" />
+                            <asp:BoundField DataField="Centre City" HeaderText="Centre City" SortExpression="Centre City" />
+                            <asp:BoundField DataField="Centre Address" HeaderText="Centre Address" SortExpression="Centre Address" />
+                            <asp:BoundField DataField="Center Phone Number" HeaderText="Center Phone Number" SortExpression="Center Phone Number" />
+                            <asp:BoundField DataField="Centre Postal Code" HeaderText="Centre Postal Code" SortExpression="Centre Postal Code" />
+                            <asp:BoundField DataField="Centre Province" HeaderText="Centre Province" SortExpression="Centre Province" />
+                            <asp:CheckBoxField DataField="Online?" HeaderText="Online?" SortExpression="Online?" />
+                            <asp:BoundField DataField="Center Cost" HeaderText="Center Cost" SortExpression="Center Cost" />
+                            <asp:BoundField DataField="Centre Longitude" HeaderText="Centre Longitude" SortExpression="Centre Longitude" />
+                            <asp:BoundField DataField="Centre Latitude" HeaderText="Centre Latitude" SortExpression="Centre Latitude" />
+                        </Columns>
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="InvigFormSource" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnect %>" ProviderName="<%$ ConnectionStrings:skejoolerConnect.ProviderName %>" SelectCommand="SELECT name AS 'Centre Name', city AS 'Centre City', street_name AS 'Centre Address', phone_num AS 'Center Phone Number', postal_code AS 'Centre Postal Code', province AS 'Centre Province', online AS 'Online?', cost AS 'Center Cost', longitude AS 'Centre Longitude', latitude AS 'Centre Latitude' FROM invigilation_centre ORDER BY city, name;"></asp:SqlDataSource>
+                </div>
+            </div>
         </div>
     </div>
 </asp:Content>
