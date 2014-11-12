@@ -11,14 +11,18 @@
                 <asp:ValidationSummary ID="regFormValidationSum" runat="server" DisplayMode="List" ForeColor="#FF5959" HeaderText="Uh oh, we ran into an problem submitting your registration. Please check that everything is filled in correctly." Font-Size="Larger" />
             </div>
             <div class="row examinee-info-title">
-                <h2>Examinee Information</h2>
+                <h2>Invigilation Centre Information</h2>
             </div>
             <div class="row invig-centre-row">
-                <div class="col-md-12 invig-centre-col">
-                    <asp:DropDownList ID="centerNameDDL" runat="server" DataSourceID="RegDropDownSource" DataTextField="name" DataValueField="centre_Id">
+                <div class="col-md-5 reg-form-lbl"><span>Invigilation Centre Name:</span></div>
+                <div class="col-md-4 invig-centre-col">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="400px" DataSourceID="RegDropDownSource" DataTextField="name" DataValueField="centre_Id" CssClass="reg-text-box">
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="RegDropDownSource" runat="server" ConnectionString="<%$ ConnectionStrings:RegFormConnectionString %>" ProviderName="<%$ ConnectionStrings:RegFormConnectionString.ProviderName %>" SelectCommand="SELECT centre_Id, name FROM invigilation_centre ORDER BY name;"></asp:SqlDataSource>
                 </div>
+            </div>
+            <div class="row examinee-info-title">
+                <h2>Examinee Information</h2>
             </div>
             <div class="row examinee-info">
                 <div class="row reg-form-row">
