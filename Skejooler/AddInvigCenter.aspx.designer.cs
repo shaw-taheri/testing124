@@ -145,7 +145,7 @@ namespace Skejooler {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList invigFormOnline;
+        protected global::System.Web.UI.WebControls.DropDownList invigFormOnline;
         
         /// <summary>
         /// invigFormOnlineReq control.
@@ -157,13 +157,13 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormOnlineReq;
         
         /// <summary>
-        /// invigFormWebsite control.
+        /// invigFormCost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox invigFormWebsite;
+        protected global::System.Web.UI.WebControls.TextBox invigFormCost;
         
         /// <summary>
         /// invigFormWebsiteReq control.
@@ -175,13 +175,13 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormWebsiteReq;
         
         /// <summary>
-        /// invigFormEmail control.
+        /// invigFormLongitude control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox invigFormEmail;
+        protected global::System.Web.UI.WebControls.TextBox invigFormLongitude;
         
         /// <summary>
         /// invigFormEmailReq control.
@@ -193,22 +193,13 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormEmailReq;
         
         /// <summary>
-        /// invigFormEmailVal control.
+        /// invigFormLatitude control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator invigFormEmailVal;
-        
-        /// <summary>
-        /// invigFormFee control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox invigFormFee;
+        protected global::System.Web.UI.WebControls.TextBox invigFormLatitude;
         
         /// <summary>
         /// invigFormFeeReq control.
@@ -218,15 +209,6 @@ namespace Skejooler {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormFeeReq;
-        
-        /// <summary>
-        /// invigFormNotes control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox invigFormNotes;
         
         /// <summary>
         /// InvigFormSubmit control.
