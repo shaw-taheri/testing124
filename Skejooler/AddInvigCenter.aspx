@@ -21,10 +21,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Phone Number:&nbsp; </td>
+                        <td>City: </td>
                         <td>
-                            <asp:TextBox ID="invigFormPhone" runat="server" Width="550px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="invigFormPhoneReq" runat="server" ControlToValidate="invigFormPhone" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                            <asp:TextBox ID="invigFormCity" runat="server" Width="550px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="invigFormCityReq" runat="server" ControlToValidate="invigFormCity" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
@@ -60,42 +60,50 @@
                             <asp:RequiredFieldValidator ID="invigFormPostalReq" runat="server" ControlToValidate="invigFormPostal" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                     </tr><tr>
+                        <td>Phone Number: </td>
+                        <td>
+                            <asp:TextBox ID="invigFormNumber" runat="server" Width="550px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="invigFormNumberReq" runat="server" ForeColor="Red" ControlToValidate="invigFormNumber" EnableClientScript="False">*</asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="invigFormNumberVal" runat="server" ControlToValidate="invigFormNumber" EnableClientScript="False" ForeColor="Red" ValidationExpression="^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$">*</asp:RegularExpressionValidator>
+                        </td>
+                    </tr><tr>
                         <td>Online Exams? </td>
                         <td>
                             <asp:RadioButtonList ID="invigFormOnline" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
-                                <asp:ListItem Value="1">Yes</asp:ListItem>
-                                <asp:ListItem Value="0">No</asp:ListItem>
+                                <asp:ListItem>Yes</asp:ListItem>
+                                <asp:ListItem>No</asp:ListItem>
                             </asp:RadioButtonList>
                             <asp:RequiredFieldValidator ID="invigFormOnlineReq" runat="server" ControlToValidate="invigFormOnline" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                     </tr><tr>
-                        <td>Cost: </td>
+                        <td>Website: </td>
                         <td>
-                            <asp:TextBox ID="invigFormCost" runat="server"  Width="550px"></asp:TextBox>
+                            <asp:TextBox ID="invigFormWebsite" runat="server"  Width="550px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="invigFormWebsiteReq" runat="server" ControlToValidate="invigFormWebsite" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                     </tr><tr>
-                        <td>Longitude:&nbsp; </td>
+                        <td>Email: </td>
                         <td>
-                            <asp:TextBox ID="invigFormLongitude" runat="server"  Width="550px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="invigFormLongitudeReq" runat="server" ControlToValidate="invigFormLongitude" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                            <asp:TextBox ID="invigFormEmail" runat="server"  Width="550px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="invigFormEmailReq" runat="server" ControlToValidate="invigFormEmail" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="invigFormEmailVal" runat="server" ControlToValidate="invigFormEmail" EnableClientScript="False" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
                         </td>
                     </tr><tr>
-                        <td>Latitude:&nbsp; </td>
+                        <td>Invigilation Fee: </td>
                         <td>
-                            <asp:TextBox ID="invigFormLatitude" runat="server"  Width="550px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="invigFormLatitudeReq" runat="server" ControlToValidate="invigFormLatitude" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                            <asp:TextBox ID="invigFormFee" runat="server"  Width="550px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="invigFormFeeReq" runat="server" ControlToValidate="invigFormFee" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                     </tr><tr>
-                        <td>City: </td>
+                        <td>Additional Notes: </td>
                         <td>
-                            <asp:TextBox ID="invigFormCity" runat="server"  Width="550px" Height="22px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="invigFormCityReq" runat="server" ControlToValidate="invigFormCity" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                            <asp:TextBox ID="invigFormNotes" runat="server"  Width="550px" Height="94px" TextMode="MultiLine"></asp:TextBox>
                         </td>
                     </tr>
                 </table>
                 <asp:ValidationSummary ID="invigFormValidationSum" runat="server" DisplayMode="List" ForeColor="Red" HeaderText="There was an error in submitting the form. Please ensure all information is included and in the right format." />
                 <br />
-                <asp:Button ID="InvigFormSubmit" runat="server" Text="Submit" OnClick="InvigFormSubmit_Click" />
+                <asp:Button ID="InvigFormSubmit" runat="server" Text="Submit" />
                 <br />
             </div>
     </body>

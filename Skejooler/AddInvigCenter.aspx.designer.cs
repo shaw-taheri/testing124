@@ -40,22 +40,22 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator invigFormNameVal;
         
         /// <summary>
-        /// invigFormPhone control.
+        /// invigFormCity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox invigFormPhone;
+        protected global::System.Web.UI.WebControls.TextBox invigFormCity;
         
         /// <summary>
-        /// invigFormPhoneReq control.
+        /// invigFormCityReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormPhoneReq;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormCityReq;
         
         /// <summary>
         /// invigFormProv control.
@@ -103,6 +103,33 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormPostalReq;
         
         /// <summary>
+        /// invigFormNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox invigFormNumber;
+        
+        /// <summary>
+        /// invigFormNumberReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormNumberReq;
+        
+        /// <summary>
+        /// invigFormNumberVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator invigFormNumberVal;
+        
+        /// <summary>
         /// invigFormOnline control.
         /// </summary>
         /// <remarks>
@@ -121,67 +148,76 @@ namespace Skejooler {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormOnlineReq;
         
         /// <summary>
-        /// invigFormCost control.
+        /// invigFormWebsite control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox invigFormCost;
+        protected global::System.Web.UI.WebControls.TextBox invigFormWebsite;
         
         /// <summary>
-        /// invigFormLongitude control.
+        /// invigFormWebsiteReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox invigFormLongitude;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormWebsiteReq;
         
         /// <summary>
-        /// invigFormLongitudeReq control.
+        /// invigFormEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormLongitudeReq;
+        protected global::System.Web.UI.WebControls.TextBox invigFormEmail;
         
         /// <summary>
-        /// invigFormLatitude control.
+        /// invigFormEmailReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox invigFormLatitude;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormEmailReq;
         
         /// <summary>
-        /// invigFormLatitudeReq control.
+        /// invigFormEmailVal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormLatitudeReq;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator invigFormEmailVal;
         
         /// <summary>
-        /// invigFormCity control.
+        /// invigFormFee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox invigFormCity;
+        protected global::System.Web.UI.WebControls.TextBox invigFormFee;
         
         /// <summary>
-        /// invigFormCityReq control.
+        /// invigFormFeeReq control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormCityReq;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator invigFormFeeReq;
+        
+        /// <summary>
+        /// invigFormNotes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox invigFormNotes;
         
         /// <summary>
         /// invigFormValidationSum control.
