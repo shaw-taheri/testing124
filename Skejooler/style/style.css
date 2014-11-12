@@ -12,7 +12,7 @@
 .top-home{
     background-image:url(/images/Map.jpg);
     background-size:cover;
-    height: 600px;
+    height: 550px;
     padding: 20px 20px;
     margin-right:0px
 }
@@ -328,6 +328,7 @@
 .results-lbl{
     width:100px;
 }
+
 
 .list-col{
 }

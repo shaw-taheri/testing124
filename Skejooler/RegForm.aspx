@@ -8,7 +8,7 @@
                 <h1>Exam Registration Form</h1>
             </div>
             <div class="row regform-errors reg-form-row">
-                <asp:ValidationSummary ID="regFormValidationSum" runat="server" DisplayMode="List" ForeColor="#FF5959" HeaderText="There was an error in submitting the form. Please ensure all information is included and in the right format." Font-Size="Larger" />
+                <asp:ValidationSummary ID="regFormValidationSum" runat="server" DisplayMode="List" ForeColor="#FF5959" HeaderText="Uh oh, we ran into an problem submitting your registration. Please check that everything is filled in correctly." Font-Size="Larger" />
             </div>
             <div class="row examinee-info-title">
                 <h2>Examinee Information</h2>
@@ -119,7 +119,7 @@
                     </div>
                 </div>
                 <div class="row reg-form-row">
-                    <div class="col-md-6 reg-form-lbl"><span>Contact Phone Number:</span></div>
+                    <div class="col-md-6 reg-form-lbl"><span>Contact Phone:</span></div>
                     <div class="col-md-6">
                         <asp:TextBox ID="instiContactNumber" runat="server" Width="400px"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="instContactNumberReq" runat="server" ControlToValidate="instiContactNumber" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
