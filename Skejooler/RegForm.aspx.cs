@@ -58,6 +58,8 @@ namespace Skejooler
                 }
 
                 RegDataSource.Close();
+
+                Response.Redirect("RegFormSubmit.aspx", false);
             }
 
         }

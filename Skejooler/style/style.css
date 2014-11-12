@@ -425,6 +425,26 @@
     border-radius:5px;
 }
 
+.reg-form-submit-title{
+    text-align:center;
+    font-size:60px;
+    color: #fff;
+    padding-top:130px;
+}
+
+.reg-form-submit-subtitle{
+    text-align:center;
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+    padding-bottom:15px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.submit-reg-form-row{
+    height:500px;
+}
+
 /******* INVIGFORM *******/
 
 .add-invig-title{
