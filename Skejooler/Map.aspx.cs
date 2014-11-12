@@ -34,7 +34,7 @@ namespace Skejooler
                      mapOptions);"
 
                      + markers +
-             
+
                 @"}     
                 google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -63,23 +63,24 @@ namespace Skejooler
               position: new google.maps.LatLng(" + reader["Latitude"].ToString() + ", " +
                     reader["Longitude"].ToString() + ")," +
                     @"map: myMap,
-              title:'" + reader["name"].ToString() + "'});";
-                    
-
-                    
+              title:'" + reader["name"].ToString() + "'});";                   
                 }
             }
             return markers;
-
         }
 
-
+        
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //when city is changed in drop down menu, redraw markers
             CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedValue.ToString() + "'";
            
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegForm.aspx");
         }
 
         
