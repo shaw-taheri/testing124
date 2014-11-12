@@ -16,7 +16,7 @@
             <div class="row invig-centre-row">
                 <div class="col-md-5 reg-form-lbl"><span>Invigilation Centre Name:</span></div>
                 <div class="col-md-4 invig-centre-col">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Width="400px" DataSourceID="RegDropDownSource" DataTextField="name" DataValueField="centre_Id" CssClass="reg-text-box">
+                    <asp:DropDownList ID="centerNameDDL" runat="server" Width="400px" DataSourceID="RegDropDownSource" DataTextField="name" DataValueField="centre_Id" CssClass="reg-text-box">
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="RegDropDownSource" runat="server" ConnectionString="<%$ ConnectionStrings:RegFormConnectionString %>" ProviderName="<%$ ConnectionStrings:RegFormConnectionString.ProviderName %>" SelectCommand="SELECT centre_Id, name FROM invigilation_centre ORDER BY name;"></asp:SqlDataSource>
                 </div>

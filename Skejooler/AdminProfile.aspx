@@ -10,44 +10,42 @@
             </div>
             <div class="row row-gridview">
                 <div class="admin-gridview-div">
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="form_Id" DataSourceID="SqlDataSource1" CssClass="admin-gridview">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Form ID" DataSourceID="SqlDataSource1">
                         <Columns>
-                            <asp:BoundField DataField="form_Id" HeaderText="form_Id" InsertVisible="False" ReadOnly="True" SortExpression="form_Id" />
-                            <asp:BoundField DataField="fName" HeaderText="fName" SortExpression="fName" />
-                            <asp:BoundField DataField="lName" HeaderText="lName" SortExpression="lName" />
-                            <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
-                            <asp:BoundField DataField="preferred_date1" HeaderText="preferred_date1" SortExpression="preferred_date1" />
-                            <asp:BoundField DataField="preferred_date2" HeaderText="preferred_date2" SortExpression="preferred_date2" />
-                            <asp:BoundField DataField="preferred_time" HeaderText="preferred_time" SortExpression="preferred_time" />
-                            <asp:BoundField DataField="school_name" HeaderText="school_name" SortExpression="school_name" />
-                            <asp:BoundField DataField="school_street_name" HeaderText="school_street_name" SortExpression="school_street_name" />
-                            <asp:BoundField DataField="school_city" HeaderText="school_city" SortExpression="school_city" />
-                            <asp:BoundField DataField="school_province" HeaderText="school_province" SortExpression="school_province" />
-                            <asp:BoundField DataField="school_contact" HeaderText="school_contact" SortExpression="school_contact" />
-                            <asp:BoundField DataField="school_contact_num" HeaderText="school_contact_num" SortExpression="school_contact_num" />
-                            <asp:BoundField DataField="school_contact_email" HeaderText="school_contact_email" SortExpression="school_contact_email" />
-                            <asp:BoundField DataField="course_num" HeaderText="course_num" SortExpression="course_num" />
-                            <asp:BoundField DataField="additional_req" HeaderText="additional_req" SortExpression="additional_req" />
-                            <asp:CheckBoxField DataField="fee_covered" HeaderText="fee_covered" SortExpression="fee_covered" />
-                            <asp:CheckBoxField DataField="post_covered" HeaderText="post_covered" SortExpression="post_covered" />
-                            <asp:CheckBoxField DataField="approval_status" HeaderText="approval_status" SortExpression="approval_status" />
-                            <asp:BoundField DataField="test_mid_final" HeaderText="test_mid_final" SortExpression="test_mid_final" />
-                            <asp:BoundField DataField="test_paper_online" HeaderText="test_paper_online" SortExpression="test_paper_online" />
-                            <asp:BoundField DataField="centre_id" HeaderText="centre_id" SortExpression="centre_id" />
-                            <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
-                            <asp:BoundField DataField="phone_num" HeaderText="phone_num" SortExpression="phone_num" />
-                            <asp:BoundField DataField="city" HeaderText="city" SortExpression="city" />
-                            <asp:BoundField DataField="street_name" HeaderText="street_name" SortExpression="street_name" />
-                            <asp:BoundField DataField="province" HeaderText="province" SortExpression="province" />
-                            <asp:BoundField DataField="postal_code" HeaderText="postal_code" SortExpression="postal_code" />
+                            <asp:BoundField DataField="Form ID" HeaderText="Form ID" InsertVisible="False" ReadOnly="True" SortExpression="Form ID" />
+                            <asp:BoundField DataField="Examinee First Name" HeaderText="Examinee First Name" SortExpression="Examinee First Name" />
+                            <asp:BoundField DataField="Examinee Last Name" HeaderText="Examinee Last Name" SortExpression="Examinee Last Name" />
+                            <asp:BoundField DataField="Examinee Email" HeaderText="Examinee Email" SortExpression="Examinee Email" />
+                            <asp:BoundField DataField="Examinee Preferred Date 1" HeaderText="Examinee Preferred Date 1" SortExpression="Examinee Preferred Date 1" />
+                            <asp:BoundField DataField="Examinee Preferred Date 2" HeaderText="Examinee Preferred Date 2" SortExpression="Examinee Preferred Date 2" />
+                            <asp:BoundField DataField="Preferred Time" HeaderText="Preferred Time" SortExpression="Preferred Time" />
+                            <asp:BoundField DataField="School Name" HeaderText="School Name" SortExpression="School Name" />
+                            <asp:BoundField DataField="Street Name" HeaderText="Street Name" SortExpression="Street Name" />
+                            <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
+                            <asp:BoundField DataField="Province" HeaderText="Province" SortExpression="Province" />
+                            <asp:BoundField DataField="Contact" HeaderText="Contact" SortExpression="Contact" />
+                            <asp:BoundField DataField="Contact Number" HeaderText="Contact Number" SortExpression="Contact Number" />
+                            <asp:BoundField DataField="Contact Email" HeaderText="Contact Email" SortExpression="Contact Email" />
+                            <asp:BoundField DataField="Course Number" HeaderText="Course Number" SortExpression="Course Number" />
+                            <asp:BoundField DataField="Additional Requirements" HeaderText="Additional Requirements" SortExpression="Additional Requirements" />
+                            <asp:CheckBoxField DataField="Fee Covered" HeaderText="Fee Covered" SortExpression="Fee Covered" />
+                            <asp:CheckBoxField DataField="Post Covered" HeaderText="Post Covered" SortExpression="Post Covered" />
+                            <asp:CheckBoxField DataField="Approval Status" HeaderText="Approval Status" SortExpression="Approval Status" />
+                            <asp:BoundField DataField="Midterm/Final" HeaderText="Midterm/Final" SortExpression="Midterm/Final" />
+                            <asp:BoundField DataField="Paper/Online" HeaderText="Paper/Online" SortExpression="Paper/Online" />
+                            <asp:BoundField DataField="Centre Name" HeaderText="Centre Name" SortExpression="Centre Name" />
+                            <asp:BoundField DataField="Centre Phone Number" HeaderText="Centre Phone Number" SortExpression="Centre Phone Number" />
+                            <asp:BoundField DataField="Centre City" HeaderText="Centre City" SortExpression="Centre City" />
+                            <asp:BoundField DataField="Centre Street" HeaderText="Centre Street" SortExpression="Centre Street" />
+                            <asp:BoundField DataField="Centre Province" HeaderText="Centre Province" SortExpression="Centre Province" />
+                            <asp:BoundField DataField="Centre Postal Code" HeaderText="Centre Postal Code" SortExpression="Centre Postal Code" />
                         </Columns>
                     </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnect %>" ProviderName="<%$ ConnectionStrings:skejoolerConnect.ProviderName %>" SelectCommand="SELECT registration_form.form_Id AS 'Form ID', registration_form.fName AS 'Examinee First Name', registration_form.lName AS 'Examinee Last Name',registration_form.email AS 'Examinee Email', registration_form.preferred_date1 AS 'Examinee Preferred Date 1', registration_form.preferred_date2 AS 'Examinee Preferred Date 2', registration_form.preferred_time AS 'Preferred Time', registration_form.school_name AS 'School Name', registration_form.school_street_name AS 'Street Name', registration_form.school_city AS 'City', registration_form.school_province AS 'Province', registration_form.school_contact AS 'Contact', registration_form.school_contact_num AS 'Contact Number', registration_form.school_contact_email AS 'Contact Email', registration_form.course_num AS 'Course Number', registration_form.additional_req AS 'Additional Requirements', registration_form.fee_covered AS 'Fee Covered', registration_form.post_covered AS 'Post Covered', registration_form.approval_status AS 'Approval Status', registration_form.test_mid_final AS 'Midterm/Final', registration_form.test_paper_online AS 'Paper/Online', invigilation_centre.name AS 'Centre Name', invigilation_centre.phone_num AS 'Centre Phone Number', invigilation_centre.city AS 'Centre City', invigilation_centre.street_name AS 'Centre Street', invigilation_centre.province AS 'Centre Province', invigilation_centre.postal_code AS 'Centre Postal Code' FROM registration_form
+INNER JOIN invigilation_centre 
+ON registration_form.centre_Id = invigilation_centre.centre_Id;"></asp:SqlDataSource>
                 </div>
             </div>
         </div>
     </div>
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnect %>" ProviderName="<%$ ConnectionStrings:skejoolerConnect.ProviderName %>" SelectCommand="SELECT registration_form.*, invigilation_centre.name, invigilation_centre.phone_num, invigilation_centre.city, invigilation_centre.street_name, invigilation_centre.province, invigilation_centre.postal_code FROM registration_form
-    INNER JOIN invigilation_centre 
-    ON registration_form.centre_Id = invigilation_centre.centre_Id;">
-</asp:SqlDataSource>
 </asp:Content>
