@@ -2,12 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container add-invig-container">
+    <div class="container-fluid add-invig-container">
         <div class="col-md-12">
             <div class="row add-invig-title">
                 <h1>Add Invigilation Center</h1>
             </div>
-            <div class="row regform-errors">
+            <div class="row invig-errors">
                 <asp:ValidationSummary ID="invigFormValidationSum" runat="server" DisplayMode="List" ForeColor="Red" HeaderText="There was an error in submitting the form. Please ensure all information is included and in the right format." />
             </div>
             <div class="row invig-form-row">

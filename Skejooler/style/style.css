@@ -432,6 +432,7 @@
     font-size:60px;
     color: #333;
     padding-top:30px;
+    padding-bottom: 20px;
 }
 
 .invig-form-row{
@@ -442,4 +443,10 @@
     font-size:20px;
     color: #333;
     text-align:right;
+}
+
+.invig-errors{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
