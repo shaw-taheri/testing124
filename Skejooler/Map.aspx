@@ -54,6 +54,7 @@
                                         <td><span>&#36</span><asp:Label ID="costLabel" runat="server" Text='<%# Eval("cost") %>'/></td>
                                     </tr>               
                                 </table>
+                                <asp:Button ID="RegButton" runat="server" CommandName="copy" OnClick="Button1_Click" Text="Register" CausesValidation="false" PostBackUrl="~/RegForm.aspx" />
                                 <hr />
                             </ItemTemplate>
                         </asp:DataList>

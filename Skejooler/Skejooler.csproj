@@ -84,7 +84,6 @@
     <Content Include="JobPostings.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Map.aspx" />
-    <Content Include="maptesting.aspx" />
     <Content Include="Master.Master" />
     <Content Include="app.config" />
     <None Include="Web.Debug.config">
@@ -175,13 +174,6 @@
     </Compile>
     <Compile Include="Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="maptesting.aspx.cs">
-      <DependentUpon>maptesting.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="maptesting.aspx.designer.cs">
-      <DependentUpon>maptesting.aspx</DependentUpon>
     </Compile>
     <Compile Include="OnlinePrograms.aspx.cs">
       <DependentUpon>OnlinePrograms.aspx</DependentUpon>
