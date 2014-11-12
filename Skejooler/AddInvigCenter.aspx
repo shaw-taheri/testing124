@@ -70,43 +70,41 @@
             <div class="row invig-form-row">
                 <div class="col-md-5 invig-form-lbl"><span>Online Exams?</span></div>
                 <div class="col-md-4">
-                    <asp:RadioButtonList ID="invigFormOnline" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
-                    <asp:ListItem Text="Yes"></asp:ListItem>
-                    <asp:ListItem Text="No"></asp:ListItem>
-                    </asp:RadioButtonList>
+                    <asp:DropDownList ID="invigFormOnline" runat="server">
+                        <asp:ListItem Value="1">Yes</asp:ListItem>
+                        <asp:ListItem Value="0">No</asp:ListItem>
+                    </asp:DropDownList>
                     <asp:RequiredFieldValidator ID="invigFormOnlineReq" runat="server" ControlToValidate="invigFormOnline" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </div>
             </div>
             <div class="row invig-form-row">
-                <div class="col-md-5 invig-form-lbl"><span>Website:</span></div>
+                <div class="col-md-5 invig-form-lbl">Cost<span>:</span></div>
                 <div class="col-md-4">
-                    <asp:TextBox ID="invigFormWebsite" runat="server"  Width="400px"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="invigFormWebsiteReq" runat="server" ControlToValidate="invigFormWebsite" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                    <asp:TextBox ID="invigFormCost" runat="server"  Width="400px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="invigFormWebsiteReq" runat="server" ControlToValidate="invigFormCost" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </div>
             </div>
             <div class="row invig-form-row">
-                <div class="col-md-5 invig-form-lbl"><span>Email:</span></div>
+                <div class="col-md-5 invig-form-lbl">Longitude<span>:</span></div>
                 <div class="col-md-4">
-                    <asp:TextBox ID="invigFormEmail" runat="server"  Width="400px"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="invigFormEmailReq" runat="server" ControlToValidate="invigFormEmail" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="invigFormEmailVal" runat="server" ControlToValidate="invigFormEmail" EnableClientScript="False" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
+                    <asp:TextBox ID="invigFormLongitude" runat="server"  Width="400px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="invigFormEmailReq" runat="server" ControlToValidate="invigFormLongitude" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </div>
             </div>
             <div class="row invig-form-row">
-                <div class="col-md-5 invig-form-lbl"><span>Invigilation Fee:</span></div>
+                <div class="col-md-5 invig-form-lbl">Latitude<span>:</span></div>
                 <div class="col-md-4">
-                    <asp:TextBox ID="invigFormFee" runat="server"  Width="400px"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="invigFormFeeReq" runat="server" ControlToValidate="invigFormFee" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                    <asp:TextBox ID="invigFormLatitude" runat="server"  Width="400px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="invigFormFeeReq" runat="server" ControlToValidate="invigFormLatitude" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </div>
             </div>
             <div class="row invig-form-row">
-                <div class="col-md-5 invig-form-lbl"><span>Additional Notes:</span></div>
+                <div class="col-md-5 invig-form-lbl"></div>
                 <div class="col-md-4">
-                    <asp:TextBox ID="invigFormNotes" runat="server"  Width="400px" Height="94px" TextMode="MultiLine"></asp:TextBox>
                 </div>
             </div>
             <div class="row submit-button reg-form-row">
-                <asp:Button ID="InvigFormSubmit" runat="server" Text="Submit" CssClass="regform-submit" />
+                <asp:Button ID="InvigFormSubmit" runat="server" Text="Submit" CssClass="regform-submit" OnClick="InvigFormSubmit_Click" />
             </div>
         </div>
     </div>
