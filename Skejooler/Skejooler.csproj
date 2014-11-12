@@ -63,7 +63,6 @@
     <Content Include="AdminProfile.aspx" />
     <Content Include="Articles.aspx" />
     <Content Include="CentreInfo.aspx" />
-    <Content Include="Form1.aspx" />
     <Content Include="Help.aspx" />
     <Content Include="images\Books.jpg" />
     <Content Include="images\bricks.jpg" />
@@ -132,13 +131,6 @@
     </Compile>
     <Compile Include="CentreInfo.aspx.designer.cs">
       <DependentUpon>CentreInfo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.aspx.cs">
-      <DependentUpon>Form1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Form1.aspx.designer.cs">
-      <DependentUpon>Form1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Help.aspx.cs">
       <DependentUpon>Help.aspx</DependentUpon>
