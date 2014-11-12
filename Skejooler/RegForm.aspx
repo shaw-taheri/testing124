@@ -13,25 +13,30 @@
             <div class="row examinee-info-title">
                 <h2>Examinee Information</h2>
             </div>
+            <div class="row invig-centre-row">
+                <div class="col-md-12 invig-centre-col">
+                    HERE!!! STICK IT IN ME TREVOR!!!!
+                </div>
+            </div>
             <div class="row examinee-info">
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>First Name:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="examineeFName" runat="server" Width="400px" CssClass="reg-text-box" placeholder="Jane"></asp:TextBox>
+                        <asp:TextBox ID="examineeFName" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" Jane"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="nameRequired" runat="server" ControlToValidate="examineeFName" ForeColor="Red" EnableClientScript="False">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Last Name:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="examineeLName" runat="server" Width="400px" CssClass="reg-text-box" placeholder="Doe"></asp:TextBox>
+                        <asp:TextBox ID="examineeLName" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" Doe"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="examineeLNameReq" runat="server" ControlToValidate="examineeLName" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row  reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Phone:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="examineeNumber" runat="server" Width="400px" CssClass="reg-text-box" placeholder="(555) 555-5555"></asp:TextBox>
+                        <asp:TextBox ID="examineeNumber" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" (555) 555-5555"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="phoneNumberReq" runat="server" ControlToValidate="examineeNumber" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="examineePhoneReg" runat="server" ControlToValidate="examineeNumber" EnableClientScript="False" ForeColor="Red" ValidationExpression="^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$">*</asp:RegularExpressionValidator>
                     </div>
@@ -39,7 +44,7 @@
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Email:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="examineeEmail" runat="server" Width="400px" CssClass="reg-text-box" placeholder="jdoe@gmail.com"></asp:TextBox>
+                        <asp:TextBox ID="examineeEmail" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" jdoe@skejooler.com"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="examineeEmailReq" runat="server" ControlToValidate="examineeEmail" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="examineeEmailVal" runat="server" ControlToValidate="examineeEmail" EnableClientScript="False" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
                     </div>
@@ -47,21 +52,21 @@
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Exam Date (First Choice):</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="examinee1stDate" runat="server" Width="400px" CssClass="reg-text-box" placeholder="January 1, 2014"></asp:TextBox>
+                        <asp:TextBox ID="examinee1stDate" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" January 1, 2014"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="examDate1stReq" runat="server" ControlToValidate="examinee1stDate" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Exam Date (Second Choice):</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="examinee2ndDate" runat="server" Width="400px" CssClass="reg-text-box" placeholder="January 1, 2014"></asp:TextBox>
+                        <asp:TextBox ID="examinee2ndDate" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" January 1, 2014"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="examDate2ndReq" runat="server" ControlToValidate="examinee2ndDate" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Exam Time (Preferred):</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="AppointmentTime" runat="server" Width="400px" CssClass="reg-text-box" placeholder="12:00pm"></asp:TextBox>
+                        <asp:TextBox ID="AppointmentTime" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" 12:00pm"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="appointmentTimeReq" runat="server" ControlToValidate="AppointmentTime" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
@@ -73,21 +78,21 @@
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>School Name:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="institutionName" runat="server" Width="400px" CssClass="reg-text-box" placeholder="Type the name of your institution"></asp:TextBox>
+                        <asp:TextBox ID="institutionName" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" Type the name of your institution"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="instNameReq" runat="server" ControlToValidate="institutionName" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Street Adress:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="insitutionStreet" runat="server" Width="400px" CssClass="reg-text-box" placeholder="5555 Main Street"></asp:TextBox>
+                        <asp:TextBox ID="insitutionStreet" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" 123 Main Street"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="institutionStreetReq" runat="server" ControlToValidate="insitutionStreet" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>City:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="institutionCity" runat="server" Width="400px" CssClass="reg-text-box" placeholder="The city your insititution is located"></asp:TextBox>
+                        <asp:TextBox ID="institutionCity" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" Your insititution's city"></asp:TextBox>
                               <asp:RequiredFieldValidator ID="institutionCityReq" runat="server" ControlToValidate="institutionCity" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
@@ -95,7 +100,7 @@
                     <div class="col-md-5 reg-form-lbl"><span>Province:</span></div>
                     <div class="col-md-4">
                         <asp:DropDownList ID="institutionProvince" runat="server" CssClass="reg-text-box">
-                            <asp:ListItem>BC</asp:ListItem>
+                            <asp:ListItem Selected="True">BC</asp:ListItem>
                             <asp:ListItem>AB</asp:ListItem>
                             <asp:ListItem>SK</asp:ListItem>
                             <asp:ListItem>MB</asp:ListItem>
@@ -114,7 +119,7 @@
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Contact Name:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="instiContactPerson" runat="server" Width="400px" CssClass="reg-text-box" placeholder="Jane Doe"></asp:TextBox>
+                        <asp:TextBox ID="instiContactPerson" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" John Smith"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="instiContactPersonReq" runat="server" ControlToValidate="instiContactPerson" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="instiContactPersonVal" runat="server" ControlToValidate="instiContactPerson" EnableClientScript="False" ForeColor="Red" ValidationExpression="[a-zA-z]+([ '-][a-zA-Z]+)*">*</asp:RegularExpressionValidator>
                     </div>
@@ -122,7 +127,7 @@
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Contact Phone:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="instiContactNumber" runat="server" Width="400px" CssClass="reg-text-box" placeholder="(555) 555-5555"></asp:TextBox>
+                        <asp:TextBox ID="instiContactNumber" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" (555) 555-5555"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="instContactNumberReq" runat="server" ControlToValidate="instiContactNumber" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="instContactNumberVal" runat="server" ControlToValidate="instiContactNumber" EnableClientScript="False" ForeColor="Red" ValidationExpression="^(?:\([2-9]\d{2}\)\ ?|[2-9]\d{2}(?:\-?|\ ?))[2-9]\d{2}[- ]?\d{4}$">*</asp:RegularExpressionValidator>
                     </div>
@@ -130,7 +135,7 @@
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Contact Email:</span></div>
                     <div class="col-md-4">
-                        <asp:TextBox ID="contactEmail" runat="server" Width="400px" CssClass="reg-text-box" placeholder="jdoe@gmail.com"></asp:TextBox>
+                        <asp:TextBox ID="contactEmail" runat="server" Width="400px" CssClass="reg-text-box" placeholder=" jsmith@school.ca"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="instContactEmailReq" runat="server" ControlToValidate="contactEmail" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="contactEmailVal" runat="server" ControlToValidate="contactEmail" EnableClientScript="False" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
                     </div>
