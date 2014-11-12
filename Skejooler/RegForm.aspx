@@ -183,7 +183,10 @@
                 <div class="row reg-form-row">
                     <div class="col-md-5 reg-form-lbl"><span>Invigilation Fee <br />Covered by Intsitution:</span></div>
                     <div class="col-md-4 fee-col">
-                        <asp:TextBox ID="invigFee" runat="server" Width="158px" CssClass="reg-text-box"></asp:TextBox>
+                        <asp:DropDownList ID="invigFee" runat="server" CssClass="reg-text-box">
+                            <asp:ListItem Selected="True" Value="0">No</asp:ListItem>
+                            <asp:ListItem Value="1">Yes</asp:ListItem>
+                        </asp:DropDownList>
                     </div>
                 </div>
             </div>
