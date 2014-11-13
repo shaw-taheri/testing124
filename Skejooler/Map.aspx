@@ -13,8 +13,7 @@
         <div class="col-md-12">
             <div class="row filter-bar">Filter Results by City: 
                 <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="CityDropDown" DataTextField="city" DataValueField="city" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" OnDataBinding="Page_Load" OnDataBound="Page_Load" OnLoad="Page_Load" OnPreRender="Page_Load"></asp:DropDownList>
-              
-                </div>
+            </div>
             <div class="row map-row">
                 <div class="col-md-6 map-col">
                     <div id="mapArea"></div>
@@ -55,7 +54,7 @@
                                         <td><span>&#36</span><asp:Label ID="costLabel" runat="server" Text='<%# Eval("cost") %>'/></td>
                                     </tr>               
                                 </table>
-                                
+                                <%--<asp:Button ID="RegButton" runat="server" CommandName="copy" OnClick="Button1_Click" Text="Register" CausesValidation="false" PostBackUrl="~/RegForm.aspx" />--%>
                                 <hr />
                             </ItemTemplate>
                         </asp:DataList>
@@ -64,10 +63,11 @@
                                 <asp:ControlParameter ControlID="DropDownList1" Name="city" PropertyName="SelectedValue" Type="String" />
                             </SelectParameters>
                         </asp:SqlDataSource>
-                     <asp:Button ID="RegButton" runat="server" CommandName="copy" OnClick="Button1_Click" Text="Register" CausesValidation="false" PostBackUrl="~/RegForm.aspx" />
                     </div>
-               
-                     </div>
+                </div>
+            </div>
+            <div class="map-btn-row">
+                <a class="find-btn" href="RegForm.aspx">REGISTER</a>
             </div>
         </div>
     </div>
