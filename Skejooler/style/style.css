@@ -344,6 +344,11 @@
 .list-col{
 }
 
+.map-btn-row{
+    text-align: center;
+    padding-bottom: 55px;
+}
+
 /******* REGFORM *******/
 
 .reg-form-container{
@@ -475,7 +480,10 @@
 
 .admin-gridview-div{
     max-width: 100%;
-    /*height: 610px;*/
     overflow-x: scroll;
     margin-bottom: 40px;
+}
+
+.admin-gridview-div th{
+    padding:5px 20px;
 }
