@@ -14,28 +14,54 @@
                 </ul>
             </div>
             <div class="row add-gridview-title">
-
+                <h2>Invigilation Centres</h2>
             </div>
             <div class="row">
                 <div class="add-gridview">
                     <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="InvigFormSource" AllowPaging="True">
+                        <Columns>
+                            <asp:BoundField DataField="Centre Name" HeaderText="Centre Name" SortExpression="Centre Name">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Centre Name" HeaderText="Centre Name" SortExpression="Centre Name">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Centre City" HeaderText="Centre City" SortExpression="Centre City">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Centre Address" HeaderText="Centre Address" SortExpression="Centre Address">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Center Phone Number" HeaderText="Centre Phone Number" SortExpression="Center Phone Number">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Centre Postal Code" HeaderText="Centre Postal Code" SortExpression="Centre Postal Code">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Centre Province" HeaderText="Centre Province" SortExpression="Centre Province">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                            <asp:CheckBoxField DataField="Online?" HeaderText="Online?" SortExpression="Online?">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:CheckBoxField>
+                            <asp:BoundField DataField="Center Cost" HeaderText="Center Cost" SortExpression="Center Cost">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Centre Longitude" HeaderText="Centre Longitude" SortExpression="Centre Longitude">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                            <asp:BoundField DataField="Centre Latitude" HeaderText="Centre Latitude" SortExpression="Centre Latitude">
+                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
+                            </asp:BoundField>
+                        </Columns>
                         <PagerSettings Mode="NextPreviousFirstLast" FirstPageText="First |" LastPageText="Last" NextPageText="Next |" PreviousPageText="Previous |" />
                         <PagerStyle backcolor="#1DA696" verticalalign="Bottom" horizontalalign="Center" ForeColor="White" />
-                        <Columns>
-                            <asp:BoundField DataField="Centre Name" HeaderText="Centre Name" SortExpression="Centre Name" />
-                            <asp:BoundField DataField="Centre City" HeaderText="Centre City" SortExpression="Centre City" />
-                            <asp:BoundField DataField="Centre Address" HeaderText="Centre Address" SortExpression="Centre Address" />
-                            <asp:BoundField DataField="Center Phone Number" HeaderText="Centre Phone Number" SortExpression="Center Phone Number" />
-                            <asp:BoundField DataField="Centre Postal Code" HeaderText="Centre Postal Code" SortExpression="Centre Postal Code" />
-                            <asp:BoundField DataField="Centre Province" HeaderText="Centre Province" SortExpression="Centre Province" />
-                            <asp:CheckBoxField DataField="Online?" HeaderText="Online?" SortExpression="Online?" />
-                            <asp:BoundField DataField="Center Cost" HeaderText="Center Cost" SortExpression="Center Cost" />
-                            <asp:BoundField DataField="Centre Longitude" HeaderText="Centre Longitude" SortExpression="Centre Longitude" />
-                            <asp:BoundField DataField="Centre Latitude" HeaderText="Centre Latitude" SortExpression="Centre Latitude" />
-                        </Columns>
                     </asp:GridView>
                 </div>
                 <asp:SqlDataSource ID="InvigFormSource" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnect %>" ProviderName="<%$ ConnectionStrings:skejoolerConnect.ProviderName %>" SelectCommand="SELECT name AS 'Centre Name', city AS 'Centre City', street_name AS 'Centre Address', phone_num AS 'Center Phone Number', postal_code AS 'Centre Postal Code', province AS 'Centre Province', online AS 'Online?', cost AS 'Center Cost', longitude AS 'Centre Longitude', latitude AS 'Centre Latitude' FROM invigilation_centre ORDER BY city, name;"></asp:SqlDataSource>
+            </div>
+            <div class="row add-gridview-title">
+                <h2>Add a new Invigilation Centre</h2>
             </div>
             <div class="row invig-errors">
                 <asp:ValidationSummary ID="invigFormValidationSum" runat="server" DisplayMode="List" ForeColor="Red" HeaderText="There was an error in submitting the form. Please ensure all information is included and in the right format." />
@@ -115,17 +141,17 @@
                 </div>
             </div>
             <div class="row invig-form-row">
-                <div class="col-md-5 invig-form-lbl">Longitude<span>:</span></div>
-                <div class="col-md-4">
-                    <asp:TextBox ID="invigFormLongitude" runat="server"  Width="400px"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="invigFormEmailReq" runat="server" ControlToValidate="invigFormLongitude" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
-                </div>
-            </div>
-            <div class="row invig-form-row">
                 <div class="col-md-5 invig-form-lbl">Latitude<span>:</span></div>
                 <div class="col-md-4">
                     <asp:TextBox ID="invigFormLatitude" runat="server"  Width="400px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="invigFormFeeReq" runat="server" ControlToValidate="invigFormLatitude" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
+                </div>
+            </div>
+            <div class="row invig-form-row">
+                <div class="col-md-5 invig-form-lbl">Longitude<span>:</span></div>
+                <div class="col-md-4">
+                    <asp:TextBox ID="invigFormLongitude" runat="server"  Width="400px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="invigFormEmailReq" runat="server" ControlToValidate="invigFormLongitude" EnableClientScript="False" ForeColor="Red">*</asp:RequiredFieldValidator>
                 </div>
             </div>
             <div class="row invig-form-row">

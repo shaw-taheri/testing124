@@ -495,5 +495,30 @@
 }
 
 .add-gridview {
+    width:100%;
+    overflow-x:scroll;
+}
 
+.add-gridview-title{
+    text-align:center;
+    padding: 20px 0px 20px 0px;
+}
+
+.print-view{
+    padding-bottom: 50px;
+    padding-left: 30%;
+}
+
+.admin-title{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.nav-tabs.nav-justified>li>a:hover {
+    color: #1DA696;
+}
+
+.nav-tabs.nav-justified>li>a {
+    color: #333;
 }
