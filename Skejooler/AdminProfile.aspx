@@ -5,14 +5,22 @@
 
     <div class="container">
         <div class="col-md-12">
-            <div class="row add-invig-title">
-                <h1>Submitted Registration Forms</h1>
+            <div class="row admin-title">
+                <h1>Administrator Dashboard</h1>
+            </div>
+            <div class="row admin-nav-tabs">
+                <ul class="nav nav-tabs nav-justified">
+                    <li role="presentation" class="active"><a href="AdminProfile.aspx">Review Registration Forms</a></li>
+                    <li role="presentation"><a href="AddInvigCenter.aspx">Add Invigilation Centres</a></li>
+                </ul>
             </div>
             <div class="row row-gridview">
                 <div class="admin-gridview-div">
                     <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="form_Id" DataSourceID="SqlDataSource1">
                         <Columns>
-                            <asp:CommandField ShowSelectButton="True" />
+                            <asp:CommandField ShowSelectButton="True" ButtonType="Button">
+                                <ControlStyle BackColor="#1DA696" ForeColor="White"></ControlStyle>
+                            </asp:CommandField>
                             <asp:BoundField DataField="form_Id" HeaderText="form_Id" InsertVisible="False" ReadOnly="True" SortExpression="form_Id" />
                             <asp:BoundField DataField="Examinee First Name" HeaderText="Examinee First Name" SortExpression="Examinee First Name" />
                             <asp:BoundField DataField="Examinee Last Name" HeaderText="Examinee Last Name" SortExpression="Examinee Last Name" />

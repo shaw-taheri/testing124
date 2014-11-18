@@ -478,12 +478,22 @@
 
 /****** ADMIN PROFILE ******/
 
-.admin-gridview-div{
+.admin-gridview-div {
     max-width: 100%;
     overflow-x: scroll;
     margin-bottom: 40px;
+    overflow-y: scroll;
+    max-height: 500px;
 }
 
-.admin-gridview-div th{
-    padding:5px 20px;
+.admin-gridview-div td, th{
+    padding:0px 40px;
+}
+
+.admin-nav-tabs{
+    padding: 20px 0px;
+}
+
+.add-gridview {
+
 }
