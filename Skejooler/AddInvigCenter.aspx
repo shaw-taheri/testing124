@@ -47,10 +47,10 @@
                             <asp:BoundField DataField="Center Cost" HeaderText="Center Cost" SortExpression="Center Cost">
                                 <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
                             </asp:BoundField>
-                            <asp:BoundField DataField="Centre Longitude" HeaderText="Centre Longitude" SortExpression="Centre Longitude">
+                            <asp:BoundField DataField="Centre Latitude" HeaderText="Centre Latitude" SortExpression="Centre Latitude">
                                 <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
                             </asp:BoundField>
-                            <asp:BoundField DataField="Centre Latitude" HeaderText="Centre Latitude" SortExpression="Centre Latitude">
+                            <asp:BoundField DataField="Centre Longitude" HeaderText="Centre Longitude" SortExpression="Centre Longitude">
                                 <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
                             </asp:BoundField>
                         </Columns>

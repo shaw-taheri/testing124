@@ -21,7 +21,7 @@
                 <div class="admin-gridview-div">
                     <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="form_Id" DataSourceID="SqlDataSource1" AllowPaging="True">
                         <Columns>
-                            <asp:CommandField ShowSelectButton="True" />
+                            <asp:CommandField ShowSelectButton="True" ButtonType="Button" SelectText="Print Format" ShowEditButton="False" ControlStyle-BackColor="#1DA696" ControlStyle-ForeColor="White" />
                             <asp:BoundField DataField="form_Id" HeaderText="form_Id" InsertVisible="False" ReadOnly="True" SortExpression="form_Id" />
                             <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
                             <asp:BoundField DataField="Examinee First Name" HeaderText="Examinee First Name" SortExpression="Examinee First Name" />
@@ -59,7 +59,7 @@
                     </asp:SqlDataSource>
                 </div>
                 <div class="row print-view">
-                    <asp:DetailsView runat="server" DataSourceID="SqlDataSource2" Height="50px" Width="500px" HeaderText="Print-Format Registration Form" HeaderStyle-ForeColor="White" HeaderStyle-BackColor="#1DA696" CellPadding="10" HorizontalAlign="Left">
+                    <asp:DetailsView runat="server" DataSourceID="SqlDataSource2" Height="50px" Width="500px" HeaderText="Registration Form Details" HeaderStyle-ForeColor="White" HeaderStyle-BackColor="#1DA696" CellPadding="10" HorizontalAlign="Left">
                         <HeaderStyle BackColor="#1DA696" ForeColor="White" HorizontalAlign="Center"></HeaderStyle>
                     </asp:DetailsView>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnect %>" ProviderName="<%$ ConnectionStrings:skejoolerConnect.ProviderName %>" SelectCommand="SELECT registration_form.*, invigilation_centre.name AS 'Invigilation Centre' FROM registration_form INNER JOIN invigilation_centre ON registration_form.centre_Id = invigilation_centre.centre_Id WHERE (form_Id = ?form_Id)">
