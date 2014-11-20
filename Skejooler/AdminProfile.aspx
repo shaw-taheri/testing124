@@ -5,14 +5,25 @@
 
     <div class="container">
         <div class="col-md-12">
-            <div class="row add-invig-title">
-                <h1>Submitted Registration Forms</h1>
+            <div class="row admin-title">
+                <h1>Administrator Dashboard</h1>
+            </div>
+            <div class="row admin-nav-tabs">
+                <ul class="nav nav-tabs nav-justified">
+                    <li role="presentation" class="active"><a href="AdminProfile.aspx">Review Registration Forms</a></li>
+                    <li role="presentation"><a href="AddInvigCenter.aspx">Add Invigilation Centres</a></li>
+                </ul>
+            </div>
+            <div class="row add-gridview-title">
+                <h2>Registration Forms</h2>
             </div>
             <div class="row row-gridview">
                 <div class="admin-gridview-div">
                     <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="form_Id" DataSourceID="SqlDataSource1">
                         <Columns>
-                            <asp:CommandField ShowSelectButton="True" />
+                            <asp:CommandField ShowSelectButton="True" ButtonType="Button">
+                                <ControlStyle BackColor="#1DA696" ForeColor="White"></ControlStyle>
+                            </asp:CommandField>
                             <asp:BoundField DataField="form_Id" HeaderText="form_Id" InsertVisible="False" ReadOnly="True" SortExpression="form_Id" />
                             <asp:BoundField DataField="Examinee First Name" HeaderText="Examinee First Name" SortExpression="Examinee First Name" />
                             <asp:BoundField DataField="Examinee Last Name" HeaderText="Examinee Last Name" SortExpression="Examinee Last Name" />
@@ -41,13 +52,16 @@
                             <asp:BoundField DataField="Centre Province" HeaderText="Centre Province" SortExpression="Centre Province" />
                             <asp:BoundField DataField="Centre Postal Code" HeaderText="Centre Postal Code" SortExpression="Centre Postal Code" />
                         </Columns>
+                        <HeaderStyle BackColor="#1DA696" ForeColor="White" />
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnect %>" ProviderName="<%$ ConnectionStrings:skejoolerConnect.ProviderName %>" SelectCommand="SELECT registration_form.form_Id, registration_form.fName AS 'Examinee First Name', registration_form.lName AS 'Examinee Last Name',registration_form.email AS 'Examinee Email', registration_form.preferred_date1 AS 'Examinee Preferred Date 1', registration_form.preferred_date2 AS 'Examinee Preferred Date 2', registration_form.preferred_time AS 'Preferred Time', registration_form.school_name AS 'School Name', registration_form.school_street_name AS 'Street Name', registration_form.school_city AS 'City', registration_form.school_province AS 'Province', registration_form.school_contact AS 'Contact', registration_form.school_contact_num AS 'Contact Number', registration_form.school_contact_email AS 'Contact Email', registration_form.course_num AS 'Course Number', registration_form.additional_req AS 'Additional Requirements', registration_form.fee_covered AS 'Fee Covered', registration_form.post_covered AS 'Post Covered', registration_form.approval_status AS 'Approval Status', registration_form.test_mid_final AS 'Midterm/Final', registration_form.test_paper_online AS 'Paper/Online', invigilation_centre.name AS 'Centre Name', invigilation_centre.phone_num AS 'Centre Phone Number', invigilation_centre.city AS 'Centre City', invigilation_centre.street_name AS 'Centre Street', invigilation_centre.province AS 'Centre Province', invigilation_centre.postal_code AS 'Centre Postal Code' FROM registration_form
-INNER JOIN invigilation_centre 
-ON registration_form.centre_Id = invigilation_centre.centre_Id;"></asp:SqlDataSource>
+                        INNER JOIN invigilation_centre 
+                        ON registration_form.centre_Id = invigilation_centre.centre_Id;">
+                    </asp:SqlDataSource>
                 </div>
-                <div>
-                    <asp:DetailsView ID="DetailsView1" runat="server" DataSourceID="SqlDataSource2" Height="50px" Width="125px">
+                <div class="row print-view">
+                    <asp:DetailsView runat="server" DataSourceID="SqlDataSource2" Height="50px" Width="500px" HeaderText="Print-Format Registration Form" HeaderStyle-ForeColor="White" HeaderStyle-BackColor="#1DA696" CellPadding="10" HorizontalAlign="Left">
+                        <HeaderStyle BackColor="#1DA696" ForeColor="White" HorizontalAlign="Center"></HeaderStyle>
                     </asp:DetailsView>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnect %>" ProviderName="<%$ ConnectionStrings:skejoolerConnect.ProviderName %>" SelectCommand="SELECT registration_form.*, invigilation_centre.name AS 'Invigilation Centre' FROM registration_form INNER JOIN invigilation_centre ON registration_form.centre_Id = invigilation_centre.centre_Id WHERE (form_Id = ?form_Id)">
                         <SelectParameters>
