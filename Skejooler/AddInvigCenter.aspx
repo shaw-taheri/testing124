@@ -23,9 +23,6 @@
                             <asp:BoundField DataField="Centre Name" HeaderText="Centre Name" SortExpression="Centre Name">
                                 <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
                             </asp:BoundField>
-                            <asp:BoundField DataField="Centre Name" HeaderText="Centre Name" SortExpression="Centre Name">
-                                <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
-                            </asp:BoundField>
                             <asp:BoundField DataField="Centre City" HeaderText="Centre City" SortExpression="Centre City">
                                 <HeaderStyle BackColor="#1DA696" ForeColor="White"></HeaderStyle>
                             </asp:BoundField>

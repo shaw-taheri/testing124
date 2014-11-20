@@ -22,7 +22,6 @@
                     <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="form_Id" DataSourceID="SqlDataSource1" AllowPaging="True">
                         <Columns>
                             <asp:CommandField ShowSelectButton="True" ButtonType="Button" SelectText="Print Format" ShowEditButton="False" ControlStyle-BackColor="#1DA696" ControlStyle-ForeColor="White" />
-                            <asp:BoundField DataField="form_Id" HeaderText="form_Id" InsertVisible="False" ReadOnly="True" SortExpression="form_Id" />
                             <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
                             <asp:BoundField DataField="Examinee First Name" HeaderText="Examinee First Name" SortExpression="Examinee First Name" />
                             <asp:BoundField DataField="Examinee Last Name" HeaderText="Examinee Last Name" SortExpression="Examinee Last Name" />
@@ -39,6 +38,7 @@
                             <asp:BoundField DataField="Contact Email" HeaderText="Contact Email" SortExpression="Contact Email" />
                             <asp:BoundField DataField="Course Number" HeaderText="Course Number" SortExpression="Course Number" />
                             <asp:BoundField DataField="Additional Requirements" HeaderText="Additional Requirements" SortExpression="Additional Requirements" />
+                            <asp:BoundField DataField="form_Id" HeaderText="form_Id" InsertVisible="False" ReadOnly="True" SortExpression="form_Id" />
                             <asp:CheckBoxField DataField="Fee Covered" HeaderText="Fee Covered" SortExpression="Fee Covered" />
                             <asp:CheckBoxField DataField="Post Covered" HeaderText="Post Covered" SortExpression="Post Covered" />
                             <asp:CheckBoxField DataField="Approval Status" HeaderText="Approval Status" SortExpression="Approval Status" />
