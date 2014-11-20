@@ -341,7 +341,8 @@
 }
 
 
-.list-col{
+.list-col{    top: 0px;
+    left: 0px;
 }
 
 .map-btn-row{

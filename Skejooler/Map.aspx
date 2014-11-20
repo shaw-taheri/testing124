@@ -11,8 +11,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">   
     <div class="container map-container">
         <div class="col-md-12">
-            <div class="row filter-bar">Filter Results by City: 
+            <div class="row filter-bar"><strong>Filter Results</strong> by City: 
                 <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="CityDropDown" DataTextField="city" DataValueField="city" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" OnDataBinding="Page_Load" OnDataBound="Page_Load" OnLoad="Page_Load" OnPreRender="Page_Load"></asp:DropDownList>
+            &nbsp;by Invigilation Centre:
+                <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="namedropdown" DataTextField="name" DataValueField="name" OnDataBinding="DropDownList2_SelectedIndexChanged" OnDataBound="DropDownList2_SelectedIndexChanged" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="namedropdown" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:skejoolerConnectionString.ProviderName %>" SelectCommand="Select name from invigilation_centre"></asp:SqlDataSource>
             </div>
             <div class="row map-row">
                 <div class="col-md-6 map-col">

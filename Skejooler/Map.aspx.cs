@@ -75,12 +75,17 @@ namespace Skejooler
         {
             //when city is changed in drop down menu, redraw markers
             CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedValue.ToString() + "'";
-           
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("RegForm.aspx");
+        }
+
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE name ='" + DropDownList2.SelectedValue.ToString() + "'";
         }
 
         
