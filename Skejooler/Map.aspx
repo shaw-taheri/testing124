@@ -12,11 +12,12 @@
     <div class="container map-container">
         <div class="col-md-12">
             <div class="row filter-bar"><strong>Filter Results</strong> by City: 
-                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="CityDropDown" DataTextField="city" DataValueField="city" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" OnDataBinding="Page_Load" OnDataBound="Page_Load" OnLoad="Page_Load" OnPreRender="Page_Load"></asp:DropDownList>
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="CityDropDown" DataTextField="city" DataValueField="centre_Id" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" OnDataBinding="Page_Load" OnDataBound="Page_Load" OnLoad="Page_Load" OnPreRender="Page_Load" OnInit="Page_Load"></asp:DropDownList>
             &nbsp;by Invigilation Centre:
-                <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" DataSourceID="namedropdown" DataTextField="name" DataValueField="name" OnDataBinding="Page_Load" OnDataBound="Page_Load" OnLoad="Page_Load" OnPreRender="Page_Load" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" DataSourceID="namedropdown" DataTextField="name" DataValueField="centre_Id" OnDataBinding="Page_Load" OnDataBound="Page_Load" OnLoad="Page_Load" OnPreRender="Page_Load" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
                 </asp:DropDownList>
-                <asp:SqlDataSource ID="namedropdown" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:skejoolerConnectionString.ProviderName %>" SelectCommand="Select name from invigilation_centre"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="namedropdown" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:skejoolerConnectionString.ProviderName %>" SelectCommand="SELECT * FROM invigilation_centre"></asp:SqlDataSource>
+                <asp:Label ID="Label1" runat="server" AssociatedControlID="DropDownList1" OnDataBinding="DropDownList1_SelectedIndexChanged" Visible="False"></asp:Label>
             </div>
             <div class="row map-row">
                 <div class="col-md-6 map-col">

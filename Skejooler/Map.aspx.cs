@@ -15,6 +15,11 @@ namespace Skejooler
         {
             string markers = GetMarkers();
 
+            if (!IsPostBack)
+            {
+                Label1.Text = "100 Mile House";
+            }
+
             //instatiate google map
             Literal1.Text = @"
              <script type='text/javascript'>
@@ -39,6 +44,8 @@ namespace Skejooler
                 google.maps.event.addDomListener(window, 'load', initialize);
 
              </script>";
+            
+            
         }
 
         // create markers for the map based on lat and long in database
@@ -49,7 +56,7 @@ namespace Skejooler
             using (MySqlConnection con = new MySqlConnection("Server=localhost;Database=skejooler;UID=root;Password="))
             {
                 //select lat and long from database
-                MySqlCommand cmd = new MySqlCommand("Select latitude, longitude, city, name FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedValue.ToString() + "'", con);
+                MySqlCommand cmd = new MySqlCommand("Select latitude, longitude, centre_id, name FROM invigilation_centre WHERE city ='" + Label1.Text.ToString() + "'", con);
                 con.Open();
                 MySqlDataReader reader = cmd.ExecuteReader();
                 int i = 0;
@@ -66,6 +73,7 @@ namespace Skejooler
               title:'" + reader["name"].ToString() + "'});";                   
                 }
             }
+            
             return markers;
         }
 
@@ -73,8 +81,12 @@ namespace Skejooler
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+            
             //when city is changed in drop down menu, redraw markers
-            CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedValue.ToString() + "'";
+            CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedItem.ToString() + "'";
+            DropDownList2.SelectedValue = DropDownList1.SelectedValue;
+            Label1.Text = DropDownList1.SelectedItem.ToString();
             
         }
 
@@ -85,7 +97,22 @@ namespace Skejooler
 
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE name ='" + DropDownList2.SelectedValue.ToString() + "'";
+            
+            CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE name ='" + DropDownList2.SelectedItem.ToString() + "'";
+            DropDownList1.SelectedValue = DropDownList2.SelectedValue;
+            
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            string location;
+            Session["userLocation"] = DropDownList2.SelectedItem;
+            location = Session["userLocation"].ToString();
+        }
+
+        protected void Label1_PreRender(object sender, EventArgs e)
+        {
+
         }
 
         
