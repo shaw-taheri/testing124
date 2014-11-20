@@ -186,7 +186,7 @@ namespace Skejooler
             //when city is changed in drop down menu, redraw markers
             CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedItem.ToString() + "'";
             
-            Label1.Text = this.DropDownList1.SelectedItem.ToString();
+           
             
             
         }

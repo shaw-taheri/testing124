@@ -17,7 +17,6 @@
                 </asp:DropDownList>
                 &nbsp;
                 <asp:SqlDataSource ID="namedropdown" runat="server" ConnectionString="<%$ ConnectionStrings:skejoolerConnectionString %>" ProviderName="<%$ ConnectionStrings:skejoolerConnectionString.ProviderName %>" SelectCommand="SELECT * FROM invigilation_centre"></asp:SqlDataSource>
-                <asp:Label ID="Label1" runat="server" AssociatedControlID="DropDownList1" OnDataBinding="DropDownList1_SelectedIndexChanged"></asp:Label>
             </div>
             <div class="row map-row">
                 <div class="col-md-6 map-col">
