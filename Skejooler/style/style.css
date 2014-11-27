@@ -96,7 +96,7 @@
     border-radius: 10px;
     font-family: 'Patua One', cursive;
     font-style: italic;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .find-btn:hover{
@@ -475,6 +475,10 @@
     text-align:center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.invig-form-btn-col{
+    text-align:center;
 }
 
 /****** ADMIN PROFILE ******/

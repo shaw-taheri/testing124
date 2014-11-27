@@ -18,17 +18,12 @@
             </div>
             <div class="row">
                 <div class="add-gridview">
-                    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="InvigFormSource" AllowPaging="True" OnRowDeleting="GridView1_RowDeleting" DataKeyNames="Centre ID">
+                    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="InvigFormSource" AllowPaging="True" OnRowDeleting="GridView1_RowDeleting" DataKeyNames="Centre ID" HeaderStyle-BackColor="#1DA696" HeaderStyle-ForeColor="White">
                         <Columns>
-                            <asp:TemplateField>
-                                <EditItemTemplate>
-                                    <asp:Button ID="Button1" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                    &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </EditItemTemplate>
-                                
+                            <asp:TemplateField ControlStyle-CssClass="invig-form-btn-col">                             
                                 <ItemTemplate>
-                                     <span onclick="return confirm('Are you sure you want to delete this centre?')">
-                                    &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
+                                    <span onclick="return confirm('Are you sure you want to delete this centre?')">
+                                        <asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" BackColor="#1DA696" ForeColor="White" />
                                     </span>
                                 </ItemTemplate>
                             </asp:TemplateField>
