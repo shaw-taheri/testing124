@@ -1,4 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+    Page Title:     Site Map
+    Page Author(s): XML - Sam Humphrey
+    Decription:     Provides page heirarchy for ASP.NET controls.
+
+    -->
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
 <siteMapNode url="~/Index.aspx" title="Home"  description="Skejooler Home Page">
   <siteMapNode url="~/Map.aspx" title="Map Search"  description="Map Search" /> 

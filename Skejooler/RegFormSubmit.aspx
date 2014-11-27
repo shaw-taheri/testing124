@@ -1,5 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="RegFormSubmit.aspx.cs" Inherits="Skejooler.RegFormSubmit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!--
+
+    Page Title:     Registration form submission confirmation
+    Page Author(s): HTML - Sam Humphrey
+                    CSS - Sam Humphrey
+                    Bootstrap - Sam Humprey
+    Decription:     Provides confirmation message that an examinee's registration form has been successfully submitted to the database. 
+
+    -->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid reg-form-container">

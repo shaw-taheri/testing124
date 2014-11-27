@@ -1,5 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="UserAccountCreation.aspx.cs" Inherits="Skejooler.UserAccountCreation" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!--
+
+    Page Title:     User Account Creation 
+    Page Author(s): HTML & ASP - Trevor Wilson
+
+    Decription:     Under Construction - Page stub for future developers
+                    Users may create a new user account
+
+    -->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!DOCTYPE html>

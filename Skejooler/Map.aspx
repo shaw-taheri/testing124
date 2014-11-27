@@ -1,6 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Map.aspx.cs" Inherits="Skejooler.Map" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!--
+
+    Page Title:     Map
+    Page Author(s): HTML & ASP - Matty Beaulne & Sam Humphrey
+                    JavaScript - Matty Beaulne
+                    c# - Matty Beaulne
+                    CSS - Sam Humphrey
+                    Bootstrap - Sam Humprey
+    Decription:     Allows users to view invigilation centres on a google map.  Lists invigilation centre information.
+    
+    -->
     <link href="style/Style.css" rel="stylesheet" />    
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?libraries=places?key=AIzaSyCTKSdSyVw_EXKaW_IubVgS6g0izh6_6R4">

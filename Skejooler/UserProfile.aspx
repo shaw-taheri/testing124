@@ -1,6 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="Skejooler.UserProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!--
 
+    Page Title:     Help
+    Page Author(s): HTML - Trevor Wilson
+    Decription:     Under Construction - Page stub for future developers
+                    A user's personal profile.
+
+    -->
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

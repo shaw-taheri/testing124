@@ -1,5 +1,16 @@
 ﻿<%@ Page Title="Registration Form" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="RegForm.aspx.cs" Inherits="Skejooler.RegForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!--
+
+    Page Title:     Registration Form
+    Page Author(s): HTML & ASP - Trevor Wilson & Sam Humphrey
+                    c# - Trevor Wilson & Shaw Taheri
+                    CSS - Sam Humphrey
+                    Bootstrap - Sam Humprey
+    Decription:     Fillable registration form.  
+                    Users may submit a registration form to the skejooler database, provided their input passes validation.
+
+    -->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">     
     <div class="container-fluid reg-form-container">

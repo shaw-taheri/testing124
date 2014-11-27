@@ -1,5 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="AddInvigCenter.aspx.cs" Inherits="Skejooler.AddInvigilationCenterForm" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="AddInvigCenter.aspx.cs" Inherits="Skejooler.AddInvigilationCenterForm" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!--
+
+    Page Title:     Adminisrator Profile - Add an Invigiliation Centre
+    Page Author(s): HTML & ASP - Sam Humphrey & Trevor Wilson
+                    CSS - Sam Humphrey
+                    Bootstrap - Sam Humprey
+    Decription:     Administrator tool that allows the listing, addition and deletion of Invigliation centres from the Skejooler database.
+    
+    -->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container add-invig-container">

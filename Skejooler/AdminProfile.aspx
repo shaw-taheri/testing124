@@ -1,5 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="AdminProfile.aspx.cs" Inherits="Skejooler.AdminProfile" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!--
+
+    Page Title:     Administrator Dashboard - Review Registration Forms
+    Page Author(s): HTML & ASP - Trevor Wilson & Sam Humphrey
+                    C# - Trevor Wilson & Shaw Taheri
+                    CSS - Sam Humphrey
+                    Bootstrap - Sam Humprey
+    Decription:     Allows administrators to view all submitted registration forms in a sortable gridview.  
+                    Administrators can choose to view a selected form's details in a more print-friendly format.
+    
+    -->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 

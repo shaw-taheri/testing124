@@ -1,7 +1,16 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Skejooler.Index" %>
 
 <!DOCTYPE html>
+<!--
 
+    Page Title:     Skejooler Home
+    Page Author(s): HTML & ASP - Sam Humphrey & Trevor Wilson
+                    CSS - Sam Humphrey
+                    Bootstrap - Sam Humprey
+    Decription:     Landing page for vistors to the site.  General information about Skejooler's features.  
+                    Content to be delivered by client.
+    
+-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8"/>
