@@ -11,13 +11,15 @@ namespace Skejooler
 {
     public partial class Map : System.Web.UI.Page
     {
+        //perform the following when the page is first loaded. 
         protected void Page_Load(object sender, EventArgs e)
         {
+           // If the page has not been loaded before do...
             if (!IsPostBack)
             {
                 string markers = GetMarkers();
 
-                //instatiate google map
+                //instatiate google map. Default map center on British Columbia
                 Literal1.Text = @"
              <script type='text/javascript'>
      
@@ -35,9 +37,10 @@ namespace Skejooler
                     var myMap = new google.maps.Map(document.getElementById('mapArea'),
                      mapOptions);"
 
-                         + markers +
-
-                    @"}     
+                    //add the markers
+                    + markers +
+                    @"}  
+   
                 google.maps.event.addDomListener(window, 'load', initialize);
 
              </script>";
@@ -45,7 +48,7 @@ namespace Skejooler
 
             }
         }
-        // create markers for the map based on lat and long in database
+        // create markers on the map based on all lat and long values stored in database
         protected string GetMarkers()
         {
             string markers = "";
@@ -74,6 +77,7 @@ namespace Skejooler
             return markers;
         }
 
+       //function to create map markers based on the city selected in city drop down list. 
         protected string GetCityMarkers()
         {
             string cityMarkers = "";
@@ -102,66 +106,63 @@ namespace Skejooler
             return cityMarkers;
         }
 
+        // get the latitude coordinate for the city selected in the rop down menu
         protected string GetLatitude()
         {
             string latitude = "";
             // connect to database
             using (MySqlConnection con = new MySqlConnection("Server=localhost;Database=skejooler;UID=root;Password="))
             {
-                //select lat and long from database
+                //select lat and long from database where the city equals the selected drop down value
                 MySqlCommand cmd = new MySqlCommand("Select latitude, longitude, centre_id, name FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedItem.ToString() + "'", con);
                 con.Open();
                 MySqlDataReader reader = cmd.ExecuteReader();
                 int i = 0;
 
-                //create markers
+                //read in and store latitude
                 while (reader.Read())
                 {
                     latitude = reader["Latitude"].ToString();
-                }
-
-                
+                }  
             }
             return latitude;
         }
 
+        // get the longitude coordinate for the city selected in the rop down menu
         protected string GetLongitude()
         {
             string longitude = "";
             // connect to database
             using (MySqlConnection con = new MySqlConnection("Server=localhost;Database=skejooler;UID=root;Password="))
             {
-                //select lat and long from database
+                //select lat and long from database where the city equals selected drop down value.
                 MySqlCommand cmd = new MySqlCommand("Select latitude, longitude, centre_id, name FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedItem.ToString() + "'", con);
                 con.Open();
                 MySqlDataReader reader = cmd.ExecuteReader();
                 int i = 0;
 
-                //create markers
+                //read in and store Longitude
                 while (reader.Read())
                 {
                     longitude = reader["Longitude"].ToString();
                 }
-
-
             }
             return longitude;
         }
 
             
         
-
+        // when the City Drop down list is changed perform these funcitons
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
             {
                 string cityMarkers = GetCityMarkers();
-                 //instatiate google map
+                 //instatiate google map again after the drop down menu is changed
                 Literal1.Text = @"
              <script type='text/javascript'>
      
-                function initialize() { 
-    
+                function initialize() {     
                     var lat = " + GetLatitude().ToString() + @"
                     var long = "  + GetLongitude().ToString() + @"
    
@@ -174,9 +175,10 @@ namespace Skejooler
                     var myMap = new google.maps.Map(document.getElementById('mapArea'),
                      mapOptions);"
 
-                         + cityMarkers +
-
-                    @"}     
+                    //add the markers for the selected city's invigilation centres
+                    + cityMarkers +
+                    @"} 
+    
                 google.maps.event.addDomListener(window, 'load', initialize);
 
              </script>"; ;
@@ -184,11 +186,7 @@ namespace Skejooler
 
             }
             //when city is changed in drop down menu, redraw markers
-            CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedItem.ToString() + "'";
-            
-           
-            
-            
+            CentreList.SelectCommand = "SELECT name, street_name, city, province, postal_code, phone_num, cost FROM invigilation_centre WHERE city ='" + DropDownList1.SelectedItem.ToString() + "'";      
         }
 
         protected void Button1_Click(object sender, EventArgs e)
