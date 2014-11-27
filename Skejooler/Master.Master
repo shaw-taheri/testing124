@@ -1,6 +1,15 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="Skejooler.Site1" %>
 
 <!DOCTYPE html>
+    <!--
+
+    Page Title:     Master
+    Page Author(s): HTML - Sam Humphrey
+                    CSS - Sam Humphrey
+                    Bootstrap - 
+    Decription:     Provides formatting and styling for consistent headers and footers throughout web app.
+
+    -->
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
