@@ -1,14 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-    <siteMapNode url="~/Index.aspx" title="Home"  description="Skejooler Home Page">
-        <siteMapNode url="~/Map.aspx" title="Map Search"  description="Map Search" /> 
-        <siteMapNode url="~/Resources.aspx" title="Resources"  description="Examinee Resources" >
-          <siteMapNode url="~/CentreInfo.aspx" title="Invigilation Centre Information"  description="Invigilation Centre Information" />
-          <siteMapNode url="~/JobPostings.aspx" title="Job Postings"  description="Job Postings" />
-          <siteMapNode url="~/OnlinePrograms.aspx" title="Online Programs"  description="Online Programs" />
-          <siteMapNode url="~/Articles.aspx" title="Articles"  description="Articles" />
-        </siteMapNode>
-        <siteMapNode url="~/RegForm.aspx" title="Register"  description="Exam Registration Form" />
-        <siteMapNode url="~/Help.aspx" title="Help"  description="User Instructions and Help" />
-    </siteMapNode>
+<siteMapNode url="~/Index.aspx" title="Home"  description="Skejooler Home Page">
+  <siteMapNode url="~/Map.aspx" title="Map Search"  description="Map Search" /> 
+  <siteMapNode url="~/Resources.aspx" title="Resources"  description="Examinee Resources" >
+    <siteMapNode url="~/CentreInfo.aspx" title="Invigilation Centre Information"  description="Invigilation Centre Information" />
+    <siteMapNode url="~/JobPostings.aspx" title="Job Postings"  description="Job Postings" />
+    <siteMapNode url="~/OnlinePrograms.aspx" title="Online Programs"  description="Online Programs" />
+    <siteMapNode url="~/Articles.aspx" title="Articles"  description="Articles" />
+  </siteMapNode>
+  <siteMapNode url="~/RegForm.aspx" title="Register"  description="Exam Registration Form">
+    <siteMapNode url="~/RegFormSubmit.aspx" title="Confirmation"  description="Registration Form Submitted Successfully" />
+  </siteMapNode>
+  <siteMapNode url="~/Login.aspx" title="Login"  description="User Login" />
+  <siteMapNode url="~/UserAccountCreation.aspx" title="Account Creation"  description="User Account Creation" />
+  <siteMapNode url="~/UserProfile.aspx" title="User Profile"  description="User Profile" />
+  <siteMapNode url="~/Help.aspx" title="Help"  description="User Instructions and Help" />
+  <siteMapNode url="~/AdminProfile.aspx" title="Administrator Dashboard"  description="Administrator Dashboard">
+    <siteMapNode url="~/AddInvigCenter.aspx" title="Administrator Dashboard"  description="Add an Invigilation Centre" />
+  </siteMapNode>
+</siteMapNode>
 </siteMap>
