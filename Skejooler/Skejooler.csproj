@@ -59,7 +59,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddInvigCenter.aspx" />
+    <Content Include="AddInvigCenter.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="AdminProfile.aspx" />
     <Content Include="Articles.aspx" />
     <Content Include="CentreInfo.aspx" />
@@ -107,9 +109,11 @@
     <Compile Include="AddInvigCenter.aspx.cs">
       <DependentUpon>AddInvigCenter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="AddInvigCenter.aspx.designer.cs">
       <DependentUpon>AddInvigCenter.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="AdminProfile.aspx.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
