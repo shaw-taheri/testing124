@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 using MySql.Data;
 using System.Windows.Forms;
 
-
+//Author: Trevor Wilson
 namespace Skejooler
 {
 	public partial class AddInvigilationCenterForm : System.Web.UI.Page

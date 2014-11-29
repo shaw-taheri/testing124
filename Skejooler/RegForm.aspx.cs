@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using MySql.Data.Types;
 
+//Author: Trevor Wilson
 namespace Skejooler
 {
     public partial class RegForm : System.Web.UI.Page

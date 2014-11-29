@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using System.Configuration;
 using MySql.Data.MySqlClient;
 
+
+//Author: Matty Beaulne
 namespace Skejooler
 {
     public partial class Map : System.Web.UI.Page
